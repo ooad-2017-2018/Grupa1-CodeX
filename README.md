@@ -109,7 +109,7 @@ putem čipa (jedinstveni QR kod životinje).
 Funkcionalnosti koje će biti realizovane u sklopu aplikacije:
 
 
-
+-//dodati još funkcionalnosti detaljnije shodno procesima
 - Mogućnost prijave praćenja strukture azila i upozorenje o stanju zaliha hrane i popunjenosti kapaciteta azila
 
 - Mogućnost prijave u sistem sa različitim privilegijama
@@ -123,6 +123,7 @@ Funkcionalnosti koje će biti realizovane u sklopu aplikacije:
 - Mogućnost registracije životinja (unos osnovnih podataka i zdravstvenog stanja), čime životinja dobija jedinstven kod i profil u katalogu, kao i mogućnost brisanja životinje po udomljavanju 
 
 - Mogućnost pretrage kataloga životinja po različitim filterima (mace/psi, spol, starosna dob..itd.)
+
 - Mogućnost grafičkog statističkog prikaza strukture azila (po odnosu mačaka i pasa, starosnoj dobi, i spolu)
 
 - Mogućnost online komunikacije različitih profila uposlenika zahtjevima/notifikacijama
