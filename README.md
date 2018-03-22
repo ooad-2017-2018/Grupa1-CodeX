@@ -109,30 +109,80 @@ putem čipa (jedinstveni QR kod životinje).
 Funkcionalnosti koje će biti realizovane u sklopu aplikacije:
 
 
--//dodati još funkcionalnosti detaljnije shodno procesima
-- Mogućnost prijave praćenja strukture azila i upozorenje o stanju zaliha hrane i popunjenosti kapaciteta azila
+Funkcionalnosti za aktera "Korisnik":
 
-- Mogućnost prijave u sistem sa različitim privilegijama
-
-- Mogućnost da svaki član ima formu na kojoj bira (verificira) različit nivo pristupa kada su u pitanju privilegije u sistemu (korisnik aplikacije udomitelj, uposlenik itd.)
+- Za guest-korisnik-a:
 
 - Mogućnost prijave nezbrinute životinje notifikacijom za online korisnike koji nisu registrovani (guest)
 
-- Mogućnost registracije korisnika - potencijalnih udomitelja
 
-- Mogućnost registracije životinja (unos osnovnih podataka i zdravstvenog stanja), čime životinja dobija jedinstven kod i profil u katalogu, kao i mogućnost brisanja životinje po udomljavanju 
+- Za korisnika koji bi želio udomiti životinju: 
 
-- Mogućnost pretrage kataloga životinja po različitim filterima (mace/psi, spol, starosna dob..itd.)
+ - Omogućuje se registracija (forma sa detaljnim unosom podataka koji sistem validira) za potencijalne udomitelje
 
-- Mogućnost grafičkog statističkog prikaza strukture azila (po odnosu mačaka i pasa, starosnoj dobi, i spolu)
+ - Mogućnost prijave u sistem i pregled kataloga dostupnih životinja za udomljavanje (mogućnost pretrage kataloga životinja po različitim filterima (mace/psi, spol, starosna dob..itd.))
+ 
+ - Mogućnost slanja zahtjeva za udomljavanje sa specifičnom formom koja sadrži motivaciono pismo, uvjete koje udomitelj nudi itd.
+ 
+ - Mogućnost primanja odobrenja administracije ili odbijenice za zahtjev
+ 
+ - Mogućnost grafičkog statističkog prikaza strukture azila (po odnosu mačaka i pasa, starosnoj dobi, i spolu)
+ 
+ 
+- Za već registriranog korisnika i/ili korisnika koji je već udomio životinju iz azila:
+
+- Mogućnost slanja zahtjeva za dresuru životinje
+
+- Mogućnost slanja zahtjeva za pregled udomljene životinje
+ 
+ 
+
+Funkcionalnosti za aktera "Uposlenik":
+
+
+- Mogućnost prijave u sistem sa različitim privilegijama (mogućnost da svaki član ima formu na kojoj bira (verificira) različit nivo pristupa kada su u pitanju privilegije u sistemu (upravitelj, veterinar, vozač, itd.))
 
 - Mogućnost online komunikacije različitih profila uposlenika zahtjevima/notifikacijama
 
+- Mogućnost pretrage kataloga životinja po različitim filterima (mace/psi, spol, starosna dob..itd.)
+
+
+Za vozača:
+- Mogućnost pregleda prijava nezbrinutih životinja od strane korisnika
+
+- Mogućnost slanja zahtjeva veterinaru, za pregled novo-pristigle životinje u azil
+
+Za veterinara:
+- Mogućnost registracije životinja (unos osnovnih podataka i zdravstvenog stanja u karton), čime životinja dobija jedinstven kod i profil u katalogu
+
+- Mogućnost primanja zahtjeva za čisto veterinarske usluge (za udomljene životinje)
+
+- Mogućnost odgovora na zahtjev
+
 - Mogućnost korištenja forme za manipulaciju sa eksternim uređajem (skeniranje jedinstvenog QR koda sa čipa životinje kako bi se omogućilo prepoznavanje životinje koja je boravila u azilu)
 
-- Mogućnost udomljavanje koje se vrši tako sto se pošalje zahtjev za udomljavanjem i čeka se odobrenje administracije. 
-- Mogućnost slanja zahtjeva za veterinarski pregled i dresuru udomljene životinje
+- Mogućnost unosa zdravstvenog stanje životinje u postojeći karton 
 
+
+
+Za upravitelja i direktora:
+- Mogućnost upozorenja o stanju zaliha hrane i popunjenosti kapaciteta azila (u vidu grafikona)
+
+- Mogućnost grafičkog statističkog prikaza strukture azila (po odnosu mačaka i pasa, starosnoj dobi, i spolu)
+
+- Mogućnost pregleda zahtjeva za udomljavanje i slanja odbijenice ili odobrenja korisniku
+
+- Mogućnost brisanja životinje po udomljavanju
+
+- Mogućnost korištenja forme za manipulaciju sa eksternim uređajem (skeniranje jedinstvenog QR koda sa čipa životinje kako bi se omogućilo prepoznavanje životinje koja je boravila u azilu)
+
+
+Za dresera:
+- Mogućnost primanja zahtjeva za dresuru  (za udomljene životinje)
+
+- Mogućnost odgovora na zahtjev
+
+- Mogućnost korištenja forme za manipulaciju sa eksternim uređajem (skeniranje jedinstvenog QR koda sa čipa životinje kako bi se omogućilo prepoznavanje životinje koja je boravila u azilu)
 
 
 
