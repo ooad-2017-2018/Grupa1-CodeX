@@ -1,0 +1,163 @@
+﻿<Page
+    x:Class="AvMauAzil.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AvMauAzil"
+   
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="White">
+        <Grid VerticalAlignment="Top" Background="White"
+              Margin="50"
+              Padding="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row ="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width ="53*"/>
+                    <ColumnDefinition Width="80*"/>
+                    <ColumnDefinition Width ="726*"/>
+                </Grid.ColumnDefinitions>
+                <!--Image x:Name="slika"  Grid.Column="0" HorizontalAlignment="Left" Height="142" Margin="8,20,20,200" VerticalAlignment="Top" Width="150" Source="avmau.png" Grid.ColumnSpan="2" /> -->
+                <Image x:Name="logo" Grid.Column="0" HorizontalAlignment="Left"  Width="199" Height="200" Margin="8,0,-207,0" Source="avmau.jpg" Grid.ColumnSpan="3" />
+                <TextBlock Text="AV-MAU SARAJEVO CITY SHELTER" FontSize="45" FontWeight="Bold" Grid.Column="2" Margin="0,80,30,0" Grid.ColumnSpan="3" SelectionChanged="TextBlock_SelectionChanged_4" />
+                <TextBlock Text="AV-MAU AZIL GRADA SARAJEVA" FontSize="45" FontWeight="Bold" Grid.Column="2" Margin="0,128,30,0" Grid.ColumnSpan="3" SelectionChanged="TextBlock_SelectionChanged_4" />
+            </Grid>
+
+            <Grid Grid.Row ="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width ="53*"/>
+                    <ColumnDefinition Width="674*"/>
+                    <ColumnDefinition Width ="726*"/>
+                </Grid.ColumnDefinitions>
+
+
+            </Grid>
+
+            <Grid Grid.Row ="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width ="65*"/>
+                    <ColumnDefinition Width="270*"/>
+                    <ColumnDefinition Width="51*"/>
+                    <ColumnDefinition Width="505*"/>
+                    <ColumnDefinition Width ="890*"/>
+                </Grid.ColumnDefinitions>
+
+
+            </Grid>
+
+            <Grid Grid.Row ="6">
+
+            </Grid>
+
+
+            <Grid Grid.Row ="6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width ="87*"/>
+                    <ColumnDefinition Width="141*"/>
+                    <ColumnDefinition Width="354*"/>
+                    <ColumnDefinition Width ="253*"/>
+                    <ColumnDefinition Width="946*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox x:Name="txtKorisnik"
+                 Grid.Column="0"
+                     PlaceholderText="Korisničko ime"
+                     Margin="8,150,6.6,8" TextChanged="txtKorisnik_TextChanged" Grid.ColumnSpan="3"/>
+            </Grid>
+
+            <Grid  Grid.Row="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width ="53*"/>
+                    <ColumnDefinition Width="300*"/>
+                    <ColumnDefinition Width ="726*"/>
+                </Grid.ColumnDefinitions>
+
+                <PasswordBox x:Name="txtSifra"
+                    Grid.Column="0"
+                     PlaceholderText="Šifra"
+                     Margin="8" Grid.ColumnSpan="2"/>
+            </Grid>
+
+            <Grid  Grid.Row="9">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width ="53*"/>
+                    <ColumnDefinition Width="674*"/>
+                    <ColumnDefinition Width ="726*"/>
+                </Grid.ColumnDefinitions>
+                <CheckBox x:Name="ckBZapamti"
+                              Grid.Column="0"
+                      Content="Zapamti šifru"
+                      Margin="8" Grid.ColumnSpan="2"/>
+            </Grid>
+
+            <Grid  Grid.Row="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width ="53*"/>
+                    <ColumnDefinition Width="300*"/>
+                    <ColumnDefinition Width ="726*"/>
+                </Grid.ColumnDefinitions>
+
+                <HyperlinkButton Content="Registriraj se" 
+                                   Grid.Column="0"
+                                 HorizontalAlignment="Left" 
+                                 Margin="8" Grid.ColumnSpan="2"/>
+
+            </Grid>
+
+            <Grid Grid.Row="11">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width ="53*"/>
+                    <ColumnDefinition Width="300*"/>
+                    <ColumnDefinition Width ="726*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="btnLogin"
+                        Grid.Column="0"
+                        Content="Prijavi se"
+                        Margin="8,8,8.4,8"
+                        Background="#1cb3bc"
+                        Foreground="White"
+                        Width="300"
+                        HorizontalAlignment="Left" Click="btnLogin_Click" Grid.ColumnSpan="2"/>
+            </Grid>
+            <Grid Grid.Row="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width ="53*"/>
+                    <ColumnDefinition Width="300*"/>
+                    <ColumnDefinition Width ="726*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnRegister"
+                        Grid.Column="0"
+                        Content="Prijavi nezbrinutu životinju"
+                        Margin="8,8,8.4,8"
+                        Background="#6bd122"
+                        Foreground="White"
+                        Width="300"
+                        HorizontalAlignment="Left" Click="btnRegister_Click" Grid.ColumnSpan="2"/>
+
+
+            </Grid>
+        </Grid>
+
+
+    </Grid>
+</Page>
