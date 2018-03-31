@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Picture" />
+  </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
       <RootProperty Name="RequestedTheme" />
@@ -24,27 +27,49 @@
       <RootMethod Name="GetColumnSpan" />
       <RootMethod Name="SetColumnSpan" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RichTextBlock">
+      <RootProperty Name="TextIndent" />
+      <RootProperty Name="Blocks" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Paragraph">
+      <RootProperty Name="TextIndent" />
+      <RootProperty Name="Inlines" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Bold">
+      <RootProperty Name="Inlines" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
-      <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
@@ -64,27 +89,12 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Source" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Text" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="FontWeight" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootEvent Name="SelectionChanged" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="AvMauAzil.MainPage" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
-    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
-      <RootProperty Name="Content" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
-      <RootProperty Name="Width" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="Name" />
       <RootProperty Name="Margin" />
@@ -96,6 +106,16 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
       <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="AvMauAzil.RegistracijaKorisnika" />
   </Roots.RootTypes>

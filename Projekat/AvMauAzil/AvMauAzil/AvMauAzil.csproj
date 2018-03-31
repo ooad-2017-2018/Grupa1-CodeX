@@ -98,6 +98,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PrijaviZivotinju.xaml.cs">
+      <DependentUpon>PrijaviZivotinju.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistracijaKorisnika.xaml.cs">
       <DependentUpon>RegistracijaKorisnika.xaml</DependentUpon>
@@ -112,6 +115,7 @@
   <ItemGroup>
     <Content Include="avmau.jpg" />
     <Content Include="avmau.png" />
+    <Content Include="h.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -129,6 +133,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PrijaviZivotinju.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RegistracijaKorisnika.xaml">
       <SubType>Designer</SubType>

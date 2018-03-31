@@ -20,21 +20,11 @@ namespace AvMauAzil
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class RegistracijaKorisnika : Page
+    public sealed partial class PrijaviZivotinju : Page
     {
-        public RegistracijaKorisnika()
+        public PrijaviZivotinju()
         {
             this.InitializeComponent();
-        }
-
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void tbJMBG_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }

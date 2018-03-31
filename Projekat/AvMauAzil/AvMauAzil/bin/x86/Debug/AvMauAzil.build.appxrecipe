@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>79951d0d-d30d-4bd9-a6e1-b500e79618a2</PackageIdentityName>
     <PackageIdentityPublisher>CN=User</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\User\source\repos\AvMauAzil\AvMauAzil\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\User\source\repos\AvMauAzil\AvMauAzil\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\User\source\repos\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\User\source\repos\AvMauAzil\AvMauAzil\bin\x86\Debug\AvMauAzil.exe">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AvMauAzil.exe">
       <PackagePath>entrypoint\AvMauAzil.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
@@ -370,53 +370,53 @@
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\source\repos\AvMauAzil\AvMauAzil\avmau.jpg">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\avmau.jpg">
       <PackagePath>avmau.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\source\repos\AvMauAzil\AvMauAzil\avmau.png">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\avmau.png">
       <PackagePath>avmau.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\source\repos\AvMauAzil\AvMauAzil\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\source\repos\AvMauAzil\AvMauAzil\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\source\repos\AvMauAzil\AvMauAzil\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\source\repos\AvMauAzil\AvMauAzil\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\source\repos\AvMauAzil\AvMauAzil\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\source\repos\AvMauAzil\AvMauAzil\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\source\repos\AvMauAzil\AvMauAzil\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\source\repos\AvMauAzil\AvMauAzil\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\source\repos\AvMauAzil\AvMauAzil\bin\x86\Debug\AvMauAzil.xr.xml">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AvMauAzil.xr.xml">
       <PackagePath>AvMauAzil.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\source\repos\AvMauAzil\AvMauAzil\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\source\repos\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AvMauAzil.exe">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AvMauAzil.exe">
       <PackagePath>AvMauAzil.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
