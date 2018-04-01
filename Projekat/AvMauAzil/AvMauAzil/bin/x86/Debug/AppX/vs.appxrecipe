@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-31T16:59:54.168</Modified>
+      <Modified>2018-03-31T19:15:29.359</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AvMauAzil.exe">
       <PackagePath>entrypoint\AvMauAzil.exe</PackagePath>
-      <Modified>2018-03-31T16:59:51.167</Modified>
+      <Modified>2018-03-31T19:15:27.601</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -499,6 +499,10 @@
       <PackagePath>avmau.jpg</PackagePath>
       <Modified>2018-03-30T15:41:16.440</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\h.jpg">
+      <PackagePath>h.jpg</PackagePath>
+      <Modified>2018-03-31T19:09:18.622</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\avmau.png">
       <PackagePath>avmau.png</PackagePath>
       <Modified>2018-03-30T15:24:42.959</Modified>
@@ -543,7 +547,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AvMauAzil.xr.xml">
       <PackagePath>AvMauAzil.xr.xml</PackagePath>
-      <Modified>2018-03-31T16:45:56.624</Modified>
+      <Modified>2018-03-31T19:15:27.240</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -552,11 +556,11 @@
     <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-31T16:59:53.473</Modified>
+      <Modified>2018-03-31T19:15:28.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AvMauAzil.exe">
       <PackagePath>AvMauAzil.exe</PackagePath>
-      <Modified>2018-03-31T16:59:54.139</Modified>
+      <Modified>2018-03-31T19:15:29.344</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

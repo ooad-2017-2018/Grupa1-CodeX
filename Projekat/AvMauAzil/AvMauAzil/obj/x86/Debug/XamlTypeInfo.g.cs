@@ -132,17 +132,19 @@ namespace AvMauAzil.AvMauAzil_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
+            _typeNameTable = new string[5];
             _typeNameTable[0] = "AvMauAzil.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "AvMauAzil.RegistracijaKorisnika";
+            _typeNameTable[3] = "AvMauAzil.PrijaviZivotinju";
+            _typeNameTable[4] = "AvMauAzil.RegistracijaKorisnika";
 
-            _typeTable = new global::System.Type[4];
+            _typeTable = new global::System.Type[5];
             _typeTable[0] = typeof(global::AvMauAzil.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::AvMauAzil.RegistracijaKorisnika);
+            _typeTable[3] = typeof(global::AvMauAzil.PrijaviZivotinju);
+            _typeTable[4] = typeof(global::AvMauAzil.RegistracijaKorisnika);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -178,7 +180,8 @@ namespace AvMauAzil.AvMauAzil_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::AvMauAzil.MainPage(); }
-        private object Activate_3_RegistracijaKorisnika() { return new global::AvMauAzil.RegistracijaKorisnika(); }
+        private object Activate_3_PrijaviZivotinju() { return new global::AvMauAzil.PrijaviZivotinju(); }
+        private object Activate_4_RegistracijaKorisnika() { return new global::AvMauAzil.RegistracijaKorisnika(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -205,9 +208,16 @@ namespace AvMauAzil.AvMauAzil_XamlTypeInfo
                 xamlType = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  AvMauAzil.RegistracijaKorisnika
+            case 3:   //  AvMauAzil.PrijaviZivotinju
                 userType = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_RegistracijaKorisnika;
+                userType.Activator = Activate_3_PrijaviZivotinju;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  AvMauAzil.RegistracijaKorisnika
+                userType = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_RegistracijaKorisnika;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
