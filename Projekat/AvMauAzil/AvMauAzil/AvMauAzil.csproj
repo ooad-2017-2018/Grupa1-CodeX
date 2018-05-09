@@ -95,6 +95,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Klase\ContainerClass.cs" />
+    <Compile Include="Klase\Direktor.cs" />
+    <Compile Include="Klase\Dreser.cs" />
+    <Compile Include="Klase\Macka.cs" />
+    <Compile Include="Klase\OstaloOsoblje.cs" />
+    <Compile Include="Klase\Pas.cs" />
+    <Compile Include="Klase\Uposlenik.cs" />
+    <Compile Include="Klase\Uprava.cs" />
+    <Compile Include="Klase\Upravitelj.cs" />
+    <Compile Include="Klase\Veterinar.cs" />
+    <Compile Include="Klase\Vozac.cs" />
+    <Compile Include="Klase\Zivotinja.cs" />
     <Compile Include="PetBook.xaml.cs">
       <DependentUpon>PetBook.xaml</DependentUpon>
     </Compile>
@@ -110,6 +122,9 @@
     </Compile>
     <Compile Include="RegistracijaZivotinje.xaml.cs">
       <DependentUpon>RegistracijaZivotinje.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UposleniAdminPage.xaml.cs">
+      <DependentUpon>UposleniAdminPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -159,6 +174,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RegistracijaZivotinje.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UposleniAdminPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

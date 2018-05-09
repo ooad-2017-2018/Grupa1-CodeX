@@ -183,14 +183,14 @@
                         <TextBlock Text="Pretraga:" FontSize="20" FontWeight="Normal"  Margin="8,20,20,0"  />
                     </Grid>
                     <Grid Grid.Row ="12">
-                      
+                        <!--
                         <SearchBox x:Name="mySearchBox" 
                                      HorizontalAlignment="Left"
                         FocusOnKeyboardInput="True"
-                        QuerySubmitted="mySearchBox_QuerySubmitted"
+                         QuerySubmitted="mySearchBox_QuerySubmitted" 
                         Margin="8,20,20,0" 
                         Width="250"
-                        Height="35"/>
+                        Height="35"/> --> 
                     </Grid>
                     <Grid Grid.Row ="13">
                         <Button x:Name="btnPretraži"

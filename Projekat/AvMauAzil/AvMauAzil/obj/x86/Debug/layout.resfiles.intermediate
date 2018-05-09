@@ -1,4 +1,10 @@
 WinMetadata\Windows.winmd
+1.jpg
+2.jpg
+3.jpg
+4.jpg
+5.jpg
+6.jpg
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -8,6 +14,13 @@ Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 avmau.jpg
 avmau.png
+App.xbf
 AvMauAzil.xr.xml
+MainPage.xbf
+PetBook.xbf
+PrijaviZivotinju.xbf
+RegistracijaKorisnika.xbf
+RegistracijaZivotinje.xbf
+UposleniAdminPage.xbf
 h.jpg
 Properties\Default.rd.xml
