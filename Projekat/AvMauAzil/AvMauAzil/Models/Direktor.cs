@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AvMauAzil.Klase
+namespace AvMauAzil.Models
 {
     public class Direktor : Uprava
     {
-        public Direktor(string imeUposlenika, int jmbgUposlenika, string usernameUposlenika, string passwordUposlenika, string emailUposlenika)
+        public Direktor(string imeUposlenika, long jmbgUposlenika, string usernameUposlenika, string passwordUposlenika, string emailUposlenika)
             : base(imeUposlenika, jmbgUposlenika, usernameUposlenika, passwordUposlenika, emailUposlenika) { }
 
     }

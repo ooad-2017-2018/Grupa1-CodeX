@@ -433,6 +433,9 @@
     <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AdminPage.xbf">
+      <PackagePath>AdminPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\PetBook.xbf">
       <PackagePath>PetBook.xbf</PackagePath>
     </AppxPackagedFile>

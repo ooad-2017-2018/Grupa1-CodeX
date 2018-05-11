@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AvMauAzil.Klase
+namespace AvMauAzil.Models
 {
     public class Pas : Zivotinja
     {

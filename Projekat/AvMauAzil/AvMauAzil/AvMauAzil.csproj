@@ -92,21 +92,24 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AdminPage.xaml.cs">
+      <DependentUpon>AdminPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Klase\ContainerClass.cs" />
-    <Compile Include="Klase\Direktor.cs" />
-    <Compile Include="Klase\Dreser.cs" />
-    <Compile Include="Klase\Macka.cs" />
-    <Compile Include="Klase\OstaloOsoblje.cs" />
-    <Compile Include="Klase\Pas.cs" />
-    <Compile Include="Klase\Uposlenik.cs" />
-    <Compile Include="Klase\Uprava.cs" />
-    <Compile Include="Klase\Upravitelj.cs" />
-    <Compile Include="Klase\Veterinar.cs" />
-    <Compile Include="Klase\Vozac.cs" />
-    <Compile Include="Klase\Zivotinja.cs" />
+    <Compile Include="Models\ContainerClass.cs" />
+    <Compile Include="Models\Direktor.cs" />
+    <Compile Include="Models\Dreser.cs" />
+    <Compile Include="Models\Macka.cs" />
+    <Compile Include="Models\OstaloOsoblje.cs" />
+    <Compile Include="Models\Pas.cs" />
+    <Compile Include="Models\Uposlenik.cs" />
+    <Compile Include="Models\Uprava.cs" />
+    <Compile Include="Models\Upravitelj.cs" />
+    <Compile Include="Models\Veterinar.cs" />
+    <Compile Include="Models\Vozac.cs" />
+    <Compile Include="Models\Zivotinja.cs" />
     <Compile Include="PetBook.xaml.cs">
       <DependentUpon>PetBook.xaml</DependentUpon>
     </Compile>
@@ -126,6 +129,7 @@
     <Compile Include="UposleniAdminPage.xaml.cs">
       <DependentUpon>UposleniAdminPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\AdminPageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -157,6 +161,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AdminPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PetBook.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -187,6 +195,7 @@
       <Version>6.0.8</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

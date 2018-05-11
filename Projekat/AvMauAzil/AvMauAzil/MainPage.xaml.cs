@@ -34,7 +34,10 @@ namespace AvMauAzil
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-
+            if(txtKorisnik.Text == "Admin" && txtSifra.Password == "admin")
+            {
+                this.Frame.Navigate(typeof(AdminPage));
+            }
         }
 
         private void txtKorisnik_TextChanged(object sender, TextChangedEventArgs e)

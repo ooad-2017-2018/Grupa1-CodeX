@@ -680,3 +680,8 @@ C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\UposleniAd
 C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\UposleniAdminPage.g.cs
 C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\UposleniAdminPage.xaml
 C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\UposleniAdminPage.xbf
+C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AdminPage.xbf
+C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\AdminPage.g.i.cs
+C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\AdminPage.g.cs
+C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\AdminPage.xaml
+C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\AdminPage.xbf

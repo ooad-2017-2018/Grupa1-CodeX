@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AvMauAzil.Klase
+namespace AvMauAzil.Models
 {
-    public class Vozac : Uposlenik
+    public class Upravitelj : Uprava
     {
-        public Vozac(string imeUposlenika, int jmbgUposlenika, string usernameUposlenika, string passwordUposlenika, string emailUposlenika)
+        public Upravitelj(string imeUposlenika, long jmbgUposlenika, string usernameUposlenika, string passwordUposlenika, string emailUposlenika)
             : base(imeUposlenika, jmbgUposlenika, usernameUposlenika, passwordUposlenika, emailUposlenika) { }
     }
 }
