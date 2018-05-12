@@ -28,5 +28,15 @@ namespace AvMauAzil
         {
             this.InitializeComponent();
         }
+
+        private void btnRegister_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnRegistriraj_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

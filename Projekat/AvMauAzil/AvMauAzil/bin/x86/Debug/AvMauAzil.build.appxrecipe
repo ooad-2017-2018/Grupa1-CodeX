@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>SENZACIJA</Machine>
-    <WindowsUser>Edin</WindowsUser>
+    <Machine>WINDOWS-QL47EAH</Machine>
+    <WindowsUser>User</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>79951d0d-d30d-4bd9-a6e1-b500e79618a2</PackageIdentityName>
     <PackageIdentityPublisher>CN=User</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AvMauAzil.exe">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AvMauAzil.exe">
       <PackagePath>entrypoint\AvMauAzil.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
@@ -370,98 +370,98 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\1.jpg">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\1.jpg">
       <PackagePath>1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\2.jpg">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\2.jpg">
       <PackagePath>2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\3.jpg">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\3.jpg">
       <PackagePath>3.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\4.jpg">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\4.jpg">
       <PackagePath>4.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\5.jpg">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\5.jpg">
       <PackagePath>5.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\6.jpg">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\6.jpg">
       <PackagePath>6.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\avmau.jpg">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\avmau.jpg">
       <PackagePath>avmau.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\h.jpg">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\h.jpg">
       <PackagePath>h.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\avmau.png">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\avmau.png">
       <PackagePath>avmau.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AvMauAzil.xr.xml">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AvMauAzil.xr.xml">
       <PackagePath>AvMauAzil.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AdminPage.xbf">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AdminPage.xbf">
       <PackagePath>AdminPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\PetBook.xbf">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\PetBook.xbf">
       <PackagePath>PetBook.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\PrijaviZivotinju.xbf">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\PrijaviZivotinju.xbf">
       <PackagePath>PrijaviZivotinju.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\RegistracijaKorisnika.xbf">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\RegistracijaKorisnika.xbf">
       <PackagePath>RegistracijaKorisnika.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\RegistracijaZivotinje.xbf">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\RegistracijaZivotinje.xbf">
       <PackagePath>RegistracijaZivotinje.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\UposleniAdminPage.xbf">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\UposleniAdminPage.xbf">
       <PackagePath>UposleniAdminPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AvMauAzil.exe">
+    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AvMauAzil.exe">
       <PackagePath>AvMauAzil.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

@@ -12,56 +12,237 @@
     <Page.DataContext>
         <VM:AdminPageViewModel/>
     </Page.DataContext>
-    
-    
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="btnREgistruj"
-            Grid.Column="0"
-            Width="320"
-            Content="EvidentirajUposlenika"
-            Margin="129,274,1471,773"
-            Background="#1cb3bc"
-            Foreground="White"
-            HorizontalAlignment="Center" Grid.ColumnSpan="1"/>
-        <Button x:Name="btnBrisii"
-            Grid.Column="0"
-            Width="320"
-            Content="Briši uposlenika"
-            Margin="513,274,1087,773"
-            Background="#1cb3bc"
-            Foreground="White"
-            HorizontalAlignment="Center" Grid.ColumnSpan="1"/>
-        <Button x:Name="btnAzuriraj"
-            Grid.Column="0"
-            Width="320"
-            Content="Azuriraj uposlenika"
-            Margin="918,274,682,773"
-            Background="#1cb3bc"
-            Foreground="White"
-            HorizontalAlignment="Center" Grid.ColumnSpan="1"/>
-        <Image x:Name="logo" Grid.Column="0" HorizontalAlignment="Left"  Width="199" Height="200" Margin="95,33,0,847" Source="avmau.jpg" />
-        <TextBlock Text="AV-MAU SARAJEVO CITY SHELTER" FontSize="45" FontWeight="Bold" Margin="362,113,83,847"  />
-        <TextBlock Text="AV-MAU AZIL GRADA SARAJEVA" FontSize="45" FontWeight="Bold" Margin="362,161,83,847"  />
-        <TextBox HorizontalAlignment="Left" Margin="129,430,0,0" Text="TextBox" VerticalAlignment="Top" Width="320"/>
-        <TextBlock Text="Unesite ime:" HorizontalAlignment="Left" Margin="129,391,0,0" TextWrapping="Wrap" VerticalAlignment="Top" />
 
-        <ListView Background="AliceBlue" x:Name="myListView" SelectedItem="{Binding SelektovaniUposlenik, Mode=TwoWay}" ItemsSource="{Binding KolekcijaUposlenika}"  HorizontalAlignment="Left" Height="603" Padding="10,10,10,10" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="1505">
-            <ListView.ItemTemplate>
-                <DataTemplate x:DataType="data:Uposlenik">
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                        <TextBlock Text="{Binding ImeUposlenika}" Margin="0,0,8,0"/>
-                        <TextBlock Text="{Binding EmailUposlenika}"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <Button x:Name="btnBrisi"
-            
-            Width="150"
-            Height="150"
-            Content="Briši selektovanog"
-            Background="#1cb3bc"
-            Foreground="White"
-            HorizontalAlignment="Center" Grid.ColumnSpan="1"/>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid VerticalAlignment="Top" Background="White"
+              Margin="60"
+              Padding="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row ="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width ="53*"/>
+                    <ColumnDefinition Width="80*"/>
+                    <ColumnDefinition Width ="726*"/>
+                </Grid.ColumnDefinitions>
+                <!--Image x:Name="slika"  Grid.Column="0" HorizontalAlignment="Left" Height="142" Margin="8,20,20,200" VerticalAlignment="Top" Width="150" Source="avmau.png" Grid.ColumnSpan="2" /> -->
+                <Image x:Name="logo" Grid.Column="0" HorizontalAlignment="Left"  Width="199" Height="200" Margin="8,0,-207,0" Source="avmau.jpg" Grid.ColumnSpan="3" />
+                <TextBlock Text="AV-MAU SARAJEVO CITY SHELTER" FontSize="45" FontWeight="Bold" Grid.Column="2" Margin="0,80,30,0" Grid.ColumnSpan="3"  />
+                <TextBlock Text="AV-MAU AZIL GRADA SARAJEVA" FontSize="45" FontWeight="Bold" Grid.Column="2" Margin="0,128,30,0" Grid.ColumnSpan="3" />
+            </Grid>
+
+            <Grid Grid.Row ="3">
+                <Grid Grid.Row ="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width ="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                </Grid>
+                <Grid Grid.Row ="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width ="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                </Grid>
+                <Grid Grid.Row ="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width ="0.4*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row ="2">
+
+                            <TextBlock Text="Registriraj uposlenika" FontSize="20" FontWeight="Bold"   Foreground="#6bd122" Margin="8,30,20,0"  />
+                        </Grid>
+                        <Grid Grid.Row ="3">
+
+                            <TextBlock Text="Ime:" FontSize="20" FontWeight="Normal"  Margin="8,30,20,0"  />
+                        </Grid>
+                        <Grid Grid.Row ="4">
+                            <TextBox x:Name="tbIme"
+                 
+                                 PlaceholderText="" Width="250" HorizontalAlignment="Left"
+                                Margin="8,10,6.6,8"  />
+                        </Grid>
+
+                        <Grid Grid.Row ="5">
+
+                            <TextBlock Text="Prezime:" FontSize="20" FontWeight="Normal"  Margin="8,20,20,0"  />
+                        </Grid>
+                        <Grid Grid.Row ="6">
+
+                            <TextBox x:Name="tbPRezime"
+                 
+                                 PlaceholderText="" Width="250" HorizontalAlignment="Left"
+                                Margin="8,10,6.6,8"  />
+                        </Grid>
+
+                        <Grid Grid.Row ="7">
+                            <TextBlock Text="JMBG:" FontSize="20" FontWeight="Normal"  Margin="8,20,20,0"  />
+                        </Grid>
+                        <Grid Grid.Row ="8">
+
+                            <TextBox x:Name="tbJMBG"
+                 
+                                 PlaceholderText="" Width="250" HorizontalAlignment="Left"
+                                Margin="8,10,6.6,8"  />
+                        </Grid>
+                        <Grid Grid.Row ="9">
+                            <TextBlock Text="Vrsta posla:" FontSize="20" FontWeight="Normal"  Margin="8,20,20,0"  />
+                        </Grid>
+                        <Grid Grid.Row ="10">
+
+                            <ComboBox  Margin="8,10,6.6,8" Name="cbVrstaPosla" HorizontalAlignment="Left"   
+                            VerticalAlignment="Top" Grid.Column="1" Width="250" Height="30">
+                                <ComboBoxItem Content="Direktor"></ComboBoxItem>
+                                <ComboBoxItem Content="Upravitelj"></ComboBoxItem>
+                                <ComboBoxItem Content="Dreser"></ComboBoxItem>
+                                <ComboBoxItem Content="Veterinar"></ComboBoxItem>
+                                <ComboBoxItem Content="Higijeničae"></ComboBoxItem>
+                            </ComboBox>
+                        </Grid>
+                        <Grid Grid.Row ="11">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="91*"/>
+                                <ColumnDefinition Width="412*"/>
+                            </Grid.ColumnDefinitions>
+
+                        </Grid>
+                        <Grid Grid.Row ="12">
+                            <!--
+                        <SearchBox x:Name="mySearchBox" 
+                                     HorizontalAlignment="Left"
+                        FocusOnKeyboardInput="True"
+                         QuerySubmitted="mySearchBox_QuerySubmitted" 
+                        Margin="8,20,20,0" 
+                        Width="250"
+                        Height="35"/> -->
+                        </Grid>
+                        <Grid Grid.Row ="13">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="226*"/>
+                                <ColumnDefinition Width="277*"/>
+                            </Grid.ColumnDefinitions>
+                            <Button x:Name="btnRegistriraj"
+                        Grid.Column="0"
+                            Width="320"
+                        Content="Registriraj"
+                        Margin="8,151,0,0"
+                        Background="#6bd122"
+                        Foreground="White"
+                        HorizontalAlignment="Left"  Grid.ColumnSpan="2" VerticalAlignment="Top"/>
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row ="2">
+
+                            <TextBlock Text="Obrisi uposlenika" FontSize="20" FontWeight="Bold"   Foreground="#6bd122" Margin="8,30,20,0"  />
+                        </Grid>
+                        <Grid Grid.Row ="3">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row ="0">
+                                <TextBlock Text="Unesite ime i prezime uposlenika kojeg brišete iz arhive:" FontSize="20" Margin="8,30,20,0"  />
+                            </Grid>
+                            <Grid Grid.Row ="3">
+                                <TextBox x:Name="tbImePrezime"
+                 
+                                 PlaceholderText="" Width="500" HorizontalAlignment="Left"
+                                Margin="8,10,6.6,8"  />
+                            </Grid>
+                            <Grid Grid.Row ="4">
+                                <ListView Background="AliceBlue" x:Name="myListView" SelectedItem="{Binding SelektovaniUposlenik, Mode=TwoWay}" ItemsSource="{Binding KolekcijaUposlenika}"  HorizontalAlignment="Left" Height="400" Margin="10,10,0,10" Width="1000">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate x:DataType="data:Uposlenik">
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                <TextBlock Text="{Binding ImeUposlenika}" Margin="0,0,20,0"/>
+                                                <TextBlock Text="{Binding EmailUposlenika}"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+
+                                </ListView>
+                            </Grid>
+                            <Grid Grid.Row ="5">
+                                <Button x:Name="btnRegister"
+                        Grid.Column="1"
+                            Width="320"
+                        Content="Izbriši"
+                        Margin="8,20,8.4,8"
+                        Background="#1cb3bc"
+                        Foreground="White"
+                        HorizontalAlignment="Left" Grid.ColumnSpan="1"/>
+                            </Grid>
+                        </Grid>
+
+
+                    </Grid>
+                    <!--  <ListView Background="AliceBlue" x:Name="myListView" SelectedItem="{Binding SelektovaniUposlenik, Mode=TwoWay}" ItemsSource="{Binding KolekcijaUposlenika}"  HorizontalAlignment="Left" Height="603" Padding="10,10,10,10" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="1505">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="data:Uposlenik">
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                <TextBlock Text="{Binding ImeUposlenika}" Margin="0,0,8,0"/>
+                                <TextBlock Text="{Binding EmailUposlenika}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>-->
+                </Grid>
+            </Grid>
+
+        </Grid>
+
+
+
+
+
     </Grid>
 </Page>
