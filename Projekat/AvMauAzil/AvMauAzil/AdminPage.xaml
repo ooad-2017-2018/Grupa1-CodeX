@@ -102,7 +102,7 @@
                         <Grid Grid.Row ="13">
 
                             <Button Command="{Binding ZaRegistraciju}" Content="Registriraj" FontSize="14"   Background="#6bd122"
-                        Foreground="White" FontWeight="Normal" Width="320" Margin="8,90,20,0"  />
+                        Foreground="White" FontWeight="Normal" Width="320" Margin="8,60,20,0"  />
                         </Grid>
                         <Grid Grid.Row ="6">
 
@@ -204,7 +204,7 @@
                                 Margin="8,20,8.6,8"  />
                             </Grid>
                             <Grid Grid.Row ="4">
-                                <ListView Background="AliceBlue" x:Name="myListView" SelectedItem="{Binding SelektovaniUposlenik, Mode=TwoWay}" ItemsSource="{Binding KolekcijaUposlenika, Mode=TwoWay}"  HorizontalAlignment="Left" Height="340" Margin="10,10,0,10" Width="1000">
+                                <ListView Background="AliceBlue" x:Name="myListView" SelectedItem="{Binding SelektovaniUposlenik, Mode=TwoWay}" ItemsSource="{Binding KolekcijaUposlenika, Mode=TwoWay}"  HorizontalAlignment="Left" Height="310" Margin="10,10,0,10" Width="1000">
                                     <ListView.ItemTemplate>
                                         <DataTemplate x:DataType="data:Uposlenik">
                                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">

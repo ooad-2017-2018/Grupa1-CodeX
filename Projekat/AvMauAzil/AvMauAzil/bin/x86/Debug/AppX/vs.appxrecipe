@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-13T20:17:23.571</Modified>
+      <Modified>2018-05-13T21:28:51.565</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AvMauAzil.exe">
       <PackagePath>entrypoint\AvMauAzil.exe</PackagePath>
-      <Modified>2018-05-13T20:17:22.201</Modified>
+      <Modified>2018-05-13T21:28:50.324</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -579,7 +579,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AdminPage.xbf">
       <PackagePath>AdminPage.xbf</PackagePath>
-      <Modified>2018-05-13T20:17:21.628</Modified>
+      <Modified>2018-05-13T21:28:49.689</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\PetBook.xbf">
       <PackagePath>PetBook.xbf</PackagePath>
@@ -616,7 +616,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AvMauAzil.exe">
       <PackagePath>AvMauAzil.exe</PackagePath>
-      <Modified>2018-05-13T20:17:23.539</Modified>
+      <Modified>2018-05-13T21:28:51.529</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
