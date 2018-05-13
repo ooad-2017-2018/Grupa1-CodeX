@@ -16,7 +16,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid VerticalAlignment="Top" Background="White"
-              Margin="60"
+              Margin="50"
               Padding="20">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
@@ -32,13 +32,13 @@
             <Grid Grid.Row ="2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width ="53*"/>
-                    <ColumnDefinition Width="80*"/>
+                    <ColumnDefinition Width="20*"/>
                     <ColumnDefinition Width ="726*"/>
                 </Grid.ColumnDefinitions>
                 <!--Image x:Name="slika"  Grid.Column="0" HorizontalAlignment="Left" Height="142" Margin="8,20,20,200" VerticalAlignment="Top" Width="150" Source="avmau.png" Grid.ColumnSpan="2" /> -->
-                <Image x:Name="logo" Grid.Column="0" HorizontalAlignment="Left"  Width="199" Height="200" Margin="8,0,-207,0" Source="avmau.jpg" Grid.ColumnSpan="3" />
-                <TextBlock Text="AV-MAU SARAJEVO CITY SHELTER" FontSize="45" FontWeight="Bold" Grid.Column="2" Margin="0,80,30,0" Grid.ColumnSpan="3"  />
-                <TextBlock Text="AV-MAU AZIL GRADA SARAJEVA" FontSize="45" FontWeight="Bold" Grid.Column="2" Margin="0,128,30,0" Grid.ColumnSpan="3" />
+                <Image x:Name="logo" Grid.Column="0" HorizontalAlignment="Left"  Width="110" Height="110" Margin="8,12,-207,0" Source="avmau.jpg" Grid.ColumnSpan="3" />
+                <TextBlock Text="AV-MAU SARAJEVO CITY SHELTER" FontSize="20" FontWeight="Bold" Grid.Column="2" Margin="0,60,20,0" Grid.ColumnSpan="3"  />
+                <TextBlock Text="AV-MAU AZIL GRADA SARAJEVA" FontSize="20" FontWeight="Bold" Grid.Column="2" Margin="0,90,20,0" Grid.ColumnSpan="3" />
             </Grid>
 
             <Grid Grid.Row ="3">
@@ -99,9 +99,10 @@
                             
                         </Grid>
 
-                        <Grid Grid.Row ="5">
+                        <Grid Grid.Row ="13">
 
-                            <Button Command="{Binding ZaRegistraciju}" Content="Registriraj" FontSize="20" FontWeight="Normal"  Margin="8,20,20,0"  />
+                            <Button Command="{Binding ZaRegistraciju}" Content="Registriraj" FontSize="14"   Background="#6bd122"
+                        Foreground="White" FontWeight="Normal" Width="320" Margin="8,90,20,0"  />
                         </Grid>
                         <Grid Grid.Row ="6">
 
@@ -128,7 +129,7 @@
 
                             <ComboBox ItemsSource="{Binding ListaRola}" Margin="8,10,6.6,8" Name="cbVrstaPosla" HorizontalAlignment="Left" SelectedItem="{Binding SelektovanaRola, Mode=TwoWay}"   
                             VerticalAlignment="Top" Grid.Column="1" Width="250" Height="30">
-                                <!-- ComboBox ima source iz ListaRola, i pridruzuje selektovanojroli-->
+                                <!-- ComboBox ima source iz ListaRola, i pridruzuje selektovanoj roli-->
                             </ComboBox>
                         </Grid>
                         <Grid Grid.Row ="11">
@@ -148,6 +149,7 @@
                         Width="250"
                         Height="35"/> -->
                         </Grid>
+                        <!--
                         <Grid Grid.Row ="13">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="226*"/>
@@ -157,11 +159,11 @@
                         Grid.Column="0"
                             Width="320"
                         Content="Registriraj"
-                        Margin="8,151,0,0"
+                        Margin="8,30,0,50"
                         Background="#6bd122"
                         Foreground="White"
-                        HorizontalAlignment="Left"  Grid.ColumnSpan="2" VerticalAlignment="Top"/>
-                        </Grid>
+                        HorizontalAlignment="Left"  Grid.ColumnSpan="2" VerticalAlignment="Top" />
+                        </Grid>-->
                     </Grid>
 
                     <Grid Grid.Column="1">
@@ -186,19 +188,23 @@
                                 <RowDefinition Height="auto"/>
                                 <RowDefinition Height="auto"/>
                                 <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
                             </Grid.RowDefinitions>
                             <Grid Grid.Row ="0">
-                                <TextBlock Text="SELEKTOVATI LAVA ZA BRISANJE:" FontSize="20" Margin="8,30,20,0"  />
+                                <TextBlock Text="Označite uposlenika za brisanje:" FontSize="20" Margin="8,30,20,0"  />
                             </Grid>
                             <!-- ovdje su se desile neke izmjene bem ga za button taj dole-->
-                            <Grid Grid.Row ="3">
+                            <Grid Grid.Row ="6">
                                 <Button x:Name="tbImePrezime"
                                  
-                                 Command="{Binding ZaBrisanje}" Content="Izbrisi Selektovanog" Width="500" HorizontalAlignment="Left"
-                                Margin="8,10,6.6,8"  />
+                                 Command="{Binding ZaBrisanje}" Content="Izbrisi Selektovanog" Width="320" HorizontalAlignment="Left"  Background="#1cb3bc"
+                        Foreground="White"
+                                Margin="8,20,8.6,8"  />
                             </Grid>
                             <Grid Grid.Row ="4">
-                                <ListView Background="AliceBlue" x:Name="myListView" SelectedItem="{Binding SelektovaniUposlenik, Mode=TwoWay}" ItemsSource="{Binding KolekcijaUposlenika, Mode=TwoWay}"  HorizontalAlignment="Left" Height="400" Margin="10,10,0,10" Width="1000">
+                                <ListView Background="AliceBlue" x:Name="myListView" SelectedItem="{Binding SelektovaniUposlenik, Mode=TwoWay}" ItemsSource="{Binding KolekcijaUposlenika, Mode=TwoWay}"  HorizontalAlignment="Left" Height="340" Margin="10,10,0,10" Width="1000">
                                     <ListView.ItemTemplate>
                                         <DataTemplate x:DataType="data:Uposlenik">
                                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
@@ -210,16 +216,16 @@
 
                                 </ListView>
                             </Grid>
-                            <Grid Grid.Row ="5">
-                                <Button x:Name="btnRegister"
-                        Grid.Column="1"
+                           <!-- <Grid Grid.Row ="6">
+                                <Button x:Name="btnBrisi"
+                       
                             Width="320"
-                        Content="Izbriši"
-                        Margin="8,20,8.4,8"
+                        Content="Izbrisi"
+                        Margin="8,20,8.4,50"
                         Background="#1cb3bc"
                         Foreground="White"
-                        HorizontalAlignment="Left" Grid.ColumnSpan="1"/>
-                            </Grid>
+                        HorizontalAlignment="Left" />
+                            </Grid> -->
                         </Grid>
 
 
