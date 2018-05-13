@@ -39,7 +39,31 @@ namespace AvMauAzil.Models
             // upis u bazu
         }
 
-        // brisi uposlenika i zivotinja
+        public static void brisiUposlenika(long jmbg)
+        {
+            for(int i = 0; i < listaUposlenika.Count; i++)
+            {
+                if(listaUposlenika[i].JmbgUposlenika == jmbg)
+                {
+                    listaUposlenika.RemoveAt(i);
+                    break;
+                }
+            }
+            //baza
+        }
+
+        public static void brisiZivotinju(int id)
+        {
+            for (int i = 0; i < listaZivotinja.Count; i++)
+            {
+                if (listaZivotinja[i].AnimalId == id)
+                {
+                    listaZivotinja.RemoveAt(i);
+                    break;
+                }
+            }
+            //baza
+        }
 
         public static List<Uposlenik> dajListuUposlenika()
         {

@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-11T13:26:18.622</Modified>
+      <Modified>2018-05-13T17:47:02.752</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AvMauAzil.exe">
       <PackagePath>entrypoint\AvMauAzil.exe</PackagePath>
-      <Modified>2018-05-11T13:26:17.862</Modified>
+      <Modified>2018-05-13T17:47:02.224</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -571,39 +571,39 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AvMauAzil.xr.xml">
       <PackagePath>AvMauAzil.xr.xml</PackagePath>
-      <Modified>2018-05-11T02:46:32.092</Modified>
+      <Modified>2018-05-13T17:47:01.872</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-05-10T12:04:48.458</Modified>
+      <Modified>2018-05-13T13:35:13.793</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AdminPage.xbf">
       <PackagePath>AdminPage.xbf</PackagePath>
-      <Modified>2018-05-11T02:46:32.102</Modified>
+      <Modified>2018-05-13T17:47:01.895</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\PetBook.xbf">
       <PackagePath>PetBook.xbf</PackagePath>
-      <Modified>2018-05-10T17:05:09.342</Modified>
+      <Modified>2018-05-13T13:35:13.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-05-11T02:32:30.202</Modified>
+      <Modified>2018-05-13T13:35:13.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\PrijaviZivotinju.xbf">
       <PackagePath>PrijaviZivotinju.xbf</PackagePath>
-      <Modified>2018-05-10T17:05:09.342</Modified>
+      <Modified>2018-05-13T13:35:13.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\RegistracijaKorisnika.xbf">
       <PackagePath>RegistracijaKorisnika.xbf</PackagePath>
-      <Modified>2018-05-10T17:05:09.343</Modified>
+      <Modified>2018-05-13T13:35:13.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\RegistracijaZivotinje.xbf">
       <PackagePath>RegistracijaZivotinje.xbf</PackagePath>
-      <Modified>2018-05-10T17:05:09.343</Modified>
+      <Modified>2018-05-13T13:35:13.795</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\UposleniAdminPage.xbf">
       <PackagePath>UposleniAdminPage.xbf</PackagePath>
-      <Modified>2018-05-11T02:32:30.202</Modified>
+      <Modified>2018-05-13T13:35:13.795</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -612,11 +612,11 @@
     <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-11T02:32:33.317</Modified>
+      <Modified>2018-05-13T14:38:34.260</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AvMauAzil.exe">
       <PackagePath>AvMauAzil.exe</PackagePath>
-      <Modified>2018-05-11T13:26:18.607</Modified>
+      <Modified>2018-05-13T17:47:02.746</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
