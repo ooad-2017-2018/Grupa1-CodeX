@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Diagnostics;
+using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
+using AvMauAzil.Azure;
+
 
 namespace AvMauAzil.ViewModels
 {
@@ -24,6 +28,7 @@ namespace AvMauAzil.ViewModels
             }
         }
 
+        
 
         List<String> listaRola = new List<String> { "Veterinar", "Dreser", "Upravitelj", "Direktor", "Vozač", "Higijeničar" };
         ObservableCollection<Uposlenik> kolekcijaUposlenika;

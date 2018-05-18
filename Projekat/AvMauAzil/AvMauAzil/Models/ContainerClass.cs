@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AvMauAzil.Azure;
+using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
+using System.Diagnostics;
+
 
 namespace AvMauAzil.Models
 {
@@ -10,6 +15,8 @@ namespace AvMauAzil.Models
     {
         // ovo ce da bude kao Organization, direktorij Klase kao Models
 
+
+        static IMobileServiceTable<uposlenici> userTableObj = App.MobileService.GetTable<uposlenici>();
 
         // ovdje ce da se izvuce iz baze sta
         static List<Uposlenik> listaUposlenika = new List<Uposlenik> {
@@ -31,6 +38,21 @@ namespace AvMauAzil.Models
         {
             listaUposlenika.Add(u);
             // upis u bazu
+            try
+            {
+                uposlenici obj = new uposlenici();
+                obj.id = u.EmployeeId.ToString();
+                obj.ime_prezime = u.ImeUposlenika;
+                obj.jmbg = u.JmbgUposlenika.ToString();
+                obj.naziv_posla = u.VrstaPosla;
+                obj.user_pass = u.UsernameUposlenika;
+                userTableObj.InsertAsync(obj);
+                Debug.WriteLine("Uspjesno unesen uposlenik.");
+            }
+            catch(Exception e)
+            {
+                Debug.WriteLine("Neuspjesno unesen uposlenik.");
+            }
         }
 
         public static void dodajZivotinju(Zivotinja z)
