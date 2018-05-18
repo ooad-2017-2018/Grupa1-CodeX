@@ -10,5 +10,10 @@ namespace AvMauAzil.Models
     {
         protected Uprava(string imeUposlenika, long jmbgUposlenika, string usernameUposlenika, string passwordUposlenika, string emailUposlenika)
             : base(imeUposlenika, jmbgUposlenika, usernameUposlenika, passwordUposlenika, emailUposlenika) { }
+
+        public override string dajVrstuPosla()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -27487,24 +27487,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\Edin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Grupa1-CodeX\\Projekat\\AvMauAzil\\AvMauAzil\\AvMauAzil.csproj",
+      "projectUniqueName": "C:\\Users\\Edin\\Grupa1-CodeX\\Projekat\\AvMauAzil\\AvMauAzil\\AvMauAzil.csproj",
       "projectName": "AvMauAzil",
-      "projectPath": "C:\\Users\\User\\Grupa1-CodeX\\Projekat\\AvMauAzil\\AvMauAzil\\AvMauAzil.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Grupa1-CodeX\\Projekat\\AvMauAzil\\AvMauAzil\\obj\\",
+      "projectPath": "C:\\Users\\Edin\\Grupa1-CodeX\\Projekat\\AvMauAzil\\AvMauAzil\\AvMauAzil.csproj",
+      "packagesPath": "C:\\Users\\Edin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Edin\\Grupa1-CodeX\\Projekat\\AvMauAzil\\AvMauAzil\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Edin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

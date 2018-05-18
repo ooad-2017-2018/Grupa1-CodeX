@@ -250,6 +250,7 @@ namespace AvMauAzil.AvMauAzil_XamlTypeInfo
             case 0:   //  AvMauAzil.ViewModels.AdminPageViewModel
                 userType = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_0_AdminPageViewModel;
+                userType.AddMemberName("OpisPosla");
                 userType.AddMemberName("PrikazUsername");
                 userType.AddMemberName("UpisanoIme");
                 userType.AddMemberName("UpisaniJmbg");
@@ -306,7 +307,6 @@ namespace AvMauAzil.AvMauAzil_XamlTypeInfo
                 userType.AddMemberName("PasswordUposlenika");
                 userType.AddMemberName("EmailUposlenika");
                 userType.AddMemberName("EmployeeId");
-                userType.AddMemberName("VrstaPosla");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -380,145 +380,150 @@ namespace AvMauAzil.AvMauAzil_XamlTypeInfo
         }
 
 
-        private object get_0_AdminPageViewModel_PrikazUsername(object instance)
+        private object get_0_AdminPageViewModel_OpisPosla(object instance)
+        {
+            var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
+            return that.OpisPosla;
+        }
+        private void set_0_AdminPageViewModel_OpisPosla(object instance, object Value)
+        {
+            var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
+            that.OpisPosla = (global::System.String)Value;
+        }
+        private object get_1_AdminPageViewModel_PrikazUsername(object instance)
         {
             var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
             return that.PrikazUsername;
         }
-        private void set_0_AdminPageViewModel_PrikazUsername(object instance, object Value)
+        private void set_1_AdminPageViewModel_PrikazUsername(object instance, object Value)
         {
             var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
             that.PrikazUsername = (global::System.String)Value;
         }
-        private object get_1_AdminPageViewModel_UpisanoIme(object instance)
+        private object get_2_AdminPageViewModel_UpisanoIme(object instance)
         {
             var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
             return that.UpisanoIme;
         }
-        private void set_1_AdminPageViewModel_UpisanoIme(object instance, object Value)
+        private void set_2_AdminPageViewModel_UpisanoIme(object instance, object Value)
         {
             var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
             that.UpisanoIme = (global::System.String)Value;
         }
-        private object get_2_AdminPageViewModel_UpisaniJmbg(object instance)
+        private object get_3_AdminPageViewModel_UpisaniJmbg(object instance)
         {
             var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
             return that.UpisaniJmbg;
         }
-        private void set_2_AdminPageViewModel_UpisaniJmbg(object instance, object Value)
+        private void set_3_AdminPageViewModel_UpisaniJmbg(object instance, object Value)
         {
             var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
             that.UpisaniJmbg = (global::System.String)Value;
         }
-        private object get_3_AdminPageViewModel_ListaRola(object instance)
+        private object get_4_AdminPageViewModel_ListaRola(object instance)
         {
             var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
             return that.ListaRola;
         }
-        private void set_3_AdminPageViewModel_ListaRola(object instance, object Value)
+        private void set_4_AdminPageViewModel_ListaRola(object instance, object Value)
         {
             var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
             that.ListaRola = (global::System.Collections.Generic.List<global::System.String>)Value;
         }
-        private object get_4_AdminPageViewModel_SelektovanaRola(object instance)
+        private object get_5_AdminPageViewModel_SelektovanaRola(object instance)
         {
             var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
             return that.SelektovanaRola;
         }
-        private void set_4_AdminPageViewModel_SelektovanaRola(object instance, object Value)
+        private void set_5_AdminPageViewModel_SelektovanaRola(object instance, object Value)
         {
             var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
             that.SelektovanaRola = (global::System.String)Value;
         }
-        private object get_5_AdminPageViewModel_ZaBrisanje(object instance)
+        private object get_6_AdminPageViewModel_ZaBrisanje(object instance)
         {
             var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
             return that.ZaBrisanje;
         }
-        private void set_5_AdminPageViewModel_ZaBrisanje(object instance, object Value)
+        private void set_6_AdminPageViewModel_ZaBrisanje(object instance, object Value)
         {
             var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
             that.ZaBrisanje = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_6_AdminPageViewModel_ZaRegistraciju(object instance)
+        private object get_7_AdminPageViewModel_ZaRegistraciju(object instance)
         {
             var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
             return that.ZaRegistraciju;
         }
-        private void set_6_AdminPageViewModel_ZaRegistraciju(object instance, object Value)
+        private void set_7_AdminPageViewModel_ZaRegistraciju(object instance, object Value)
         {
             var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
             that.ZaRegistraciju = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_7_AdminPageViewModel_KolekcijaUposlenika(object instance)
+        private object get_8_AdminPageViewModel_KolekcijaUposlenika(object instance)
         {
             var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
             return that.KolekcijaUposlenika;
         }
-        private void set_7_AdminPageViewModel_KolekcijaUposlenika(object instance, object Value)
+        private void set_8_AdminPageViewModel_KolekcijaUposlenika(object instance, object Value)
         {
             var that = (global::AvMauAzil.ViewModels.AdminPageViewModel)instance;
             that.KolekcijaUposlenika = (global::System.Collections.ObjectModel.ObservableCollection<global::AvMauAzil.Models.Uposlenik>)Value;
         }
-        private object get_8_Uposlenik_ImeUposlenika(object instance)
+        private object get_9_Uposlenik_ImeUposlenika(object instance)
         {
             var that = (global::AvMauAzil.Models.Uposlenik)instance;
             return that.ImeUposlenika;
         }
-        private void set_8_Uposlenik_ImeUposlenika(object instance, object Value)
+        private void set_9_Uposlenik_ImeUposlenika(object instance, object Value)
         {
             var that = (global::AvMauAzil.Models.Uposlenik)instance;
             that.ImeUposlenika = (global::System.String)Value;
         }
-        private object get_9_Uposlenik_JmbgUposlenika(object instance)
+        private object get_10_Uposlenik_JmbgUposlenika(object instance)
         {
             var that = (global::AvMauAzil.Models.Uposlenik)instance;
             return that.JmbgUposlenika;
         }
-        private void set_9_Uposlenik_JmbgUposlenika(object instance, object Value)
+        private void set_10_Uposlenik_JmbgUposlenika(object instance, object Value)
         {
             var that = (global::AvMauAzil.Models.Uposlenik)instance;
             that.JmbgUposlenika = (global::System.Int64)Value;
         }
-        private object get_10_Uposlenik_UsernameUposlenika(object instance)
+        private object get_11_Uposlenik_UsernameUposlenika(object instance)
         {
             var that = (global::AvMauAzil.Models.Uposlenik)instance;
             return that.UsernameUposlenika;
         }
-        private void set_10_Uposlenik_UsernameUposlenika(object instance, object Value)
+        private void set_11_Uposlenik_UsernameUposlenika(object instance, object Value)
         {
             var that = (global::AvMauAzil.Models.Uposlenik)instance;
             that.UsernameUposlenika = (global::System.String)Value;
         }
-        private object get_11_Uposlenik_PasswordUposlenika(object instance)
+        private object get_12_Uposlenik_PasswordUposlenika(object instance)
         {
             var that = (global::AvMauAzil.Models.Uposlenik)instance;
             return that.PasswordUposlenika;
         }
-        private void set_11_Uposlenik_PasswordUposlenika(object instance, object Value)
+        private void set_12_Uposlenik_PasswordUposlenika(object instance, object Value)
         {
             var that = (global::AvMauAzil.Models.Uposlenik)instance;
             that.PasswordUposlenika = (global::System.String)Value;
         }
-        private object get_12_Uposlenik_EmailUposlenika(object instance)
+        private object get_13_Uposlenik_EmailUposlenika(object instance)
         {
             var that = (global::AvMauAzil.Models.Uposlenik)instance;
             return that.EmailUposlenika;
         }
-        private void set_12_Uposlenik_EmailUposlenika(object instance, object Value)
+        private void set_13_Uposlenik_EmailUposlenika(object instance, object Value)
         {
             var that = (global::AvMauAzil.Models.Uposlenik)instance;
             that.EmailUposlenika = (global::System.String)Value;
         }
-        private object get_13_Uposlenik_EmployeeId(object instance)
+        private object get_14_Uposlenik_EmployeeId(object instance)
         {
             var that = (global::AvMauAzil.Models.Uposlenik)instance;
             return that.EmployeeId;
-        }
-        private object get_14_Uposlenik_VrstaPosla(object instance)
-        {
-            var that = (global::AvMauAzil.Models.Uposlenik)instance;
-            return that.VrstaPosla;
         }
         private object get_15_AdminPageViewModel_SelektovaniUposlenik(object instance)
         {
@@ -538,94 +543,94 @@ namespace AvMauAzil.AvMauAzil_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "AvMauAzil.ViewModels.AdminPageViewModel.OpisPosla":
+                userType = (global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AvMauAzil.ViewModels.AdminPageViewModel");
+                xamlMember = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlMember(this, "OpisPosla", "String");
+                xamlMember.Getter = get_0_AdminPageViewModel_OpisPosla;
+                xamlMember.Setter = set_0_AdminPageViewModel_OpisPosla;
+                break;
             case "AvMauAzil.ViewModels.AdminPageViewModel.PrikazUsername":
                 userType = (global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AvMauAzil.ViewModels.AdminPageViewModel");
                 xamlMember = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlMember(this, "PrikazUsername", "String");
-                xamlMember.Getter = get_0_AdminPageViewModel_PrikazUsername;
-                xamlMember.Setter = set_0_AdminPageViewModel_PrikazUsername;
+                xamlMember.Getter = get_1_AdminPageViewModel_PrikazUsername;
+                xamlMember.Setter = set_1_AdminPageViewModel_PrikazUsername;
                 break;
             case "AvMauAzil.ViewModels.AdminPageViewModel.UpisanoIme":
                 userType = (global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AvMauAzil.ViewModels.AdminPageViewModel");
                 xamlMember = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlMember(this, "UpisanoIme", "String");
-                xamlMember.Getter = get_1_AdminPageViewModel_UpisanoIme;
-                xamlMember.Setter = set_1_AdminPageViewModel_UpisanoIme;
+                xamlMember.Getter = get_2_AdminPageViewModel_UpisanoIme;
+                xamlMember.Setter = set_2_AdminPageViewModel_UpisanoIme;
                 break;
             case "AvMauAzil.ViewModels.AdminPageViewModel.UpisaniJmbg":
                 userType = (global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AvMauAzil.ViewModels.AdminPageViewModel");
                 xamlMember = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlMember(this, "UpisaniJmbg", "String");
-                xamlMember.Getter = get_2_AdminPageViewModel_UpisaniJmbg;
-                xamlMember.Setter = set_2_AdminPageViewModel_UpisaniJmbg;
+                xamlMember.Getter = get_3_AdminPageViewModel_UpisaniJmbg;
+                xamlMember.Setter = set_3_AdminPageViewModel_UpisaniJmbg;
                 break;
             case "AvMauAzil.ViewModels.AdminPageViewModel.ListaRola":
                 userType = (global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AvMauAzil.ViewModels.AdminPageViewModel");
                 xamlMember = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlMember(this, "ListaRola", "System.Collections.Generic.List`1<String>");
-                xamlMember.Getter = get_3_AdminPageViewModel_ListaRola;
-                xamlMember.Setter = set_3_AdminPageViewModel_ListaRola;
+                xamlMember.Getter = get_4_AdminPageViewModel_ListaRola;
+                xamlMember.Setter = set_4_AdminPageViewModel_ListaRola;
                 break;
             case "AvMauAzil.ViewModels.AdminPageViewModel.SelektovanaRola":
                 userType = (global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AvMauAzil.ViewModels.AdminPageViewModel");
                 xamlMember = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlMember(this, "SelektovanaRola", "String");
-                xamlMember.Getter = get_4_AdminPageViewModel_SelektovanaRola;
-                xamlMember.Setter = set_4_AdminPageViewModel_SelektovanaRola;
+                xamlMember.Getter = get_5_AdminPageViewModel_SelektovanaRola;
+                xamlMember.Setter = set_5_AdminPageViewModel_SelektovanaRola;
                 break;
             case "AvMauAzil.ViewModels.AdminPageViewModel.ZaBrisanje":
                 userType = (global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AvMauAzil.ViewModels.AdminPageViewModel");
                 xamlMember = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlMember(this, "ZaBrisanje", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_5_AdminPageViewModel_ZaBrisanje;
-                xamlMember.Setter = set_5_AdminPageViewModel_ZaBrisanje;
+                xamlMember.Getter = get_6_AdminPageViewModel_ZaBrisanje;
+                xamlMember.Setter = set_6_AdminPageViewModel_ZaBrisanje;
                 break;
             case "AvMauAzil.ViewModels.AdminPageViewModel.ZaRegistraciju":
                 userType = (global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AvMauAzil.ViewModels.AdminPageViewModel");
                 xamlMember = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlMember(this, "ZaRegistraciju", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_6_AdminPageViewModel_ZaRegistraciju;
-                xamlMember.Setter = set_6_AdminPageViewModel_ZaRegistraciju;
+                xamlMember.Getter = get_7_AdminPageViewModel_ZaRegistraciju;
+                xamlMember.Setter = set_7_AdminPageViewModel_ZaRegistraciju;
                 break;
             case "AvMauAzil.ViewModels.AdminPageViewModel.KolekcijaUposlenika":
                 userType = (global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AvMauAzil.ViewModels.AdminPageViewModel");
                 xamlMember = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlMember(this, "KolekcijaUposlenika", "System.Collections.ObjectModel.ObservableCollection`1<AvMauAzil.Models.Uposlenik>");
-                xamlMember.Getter = get_7_AdminPageViewModel_KolekcijaUposlenika;
-                xamlMember.Setter = set_7_AdminPageViewModel_KolekcijaUposlenika;
+                xamlMember.Getter = get_8_AdminPageViewModel_KolekcijaUposlenika;
+                xamlMember.Setter = set_8_AdminPageViewModel_KolekcijaUposlenika;
                 break;
             case "AvMauAzil.Models.Uposlenik.ImeUposlenika":
                 userType = (global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AvMauAzil.Models.Uposlenik");
                 xamlMember = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlMember(this, "ImeUposlenika", "String");
-                xamlMember.Getter = get_8_Uposlenik_ImeUposlenika;
-                xamlMember.Setter = set_8_Uposlenik_ImeUposlenika;
+                xamlMember.Getter = get_9_Uposlenik_ImeUposlenika;
+                xamlMember.Setter = set_9_Uposlenik_ImeUposlenika;
                 break;
             case "AvMauAzil.Models.Uposlenik.JmbgUposlenika":
                 userType = (global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AvMauAzil.Models.Uposlenik");
                 xamlMember = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlMember(this, "JmbgUposlenika", "Int64");
-                xamlMember.Getter = get_9_Uposlenik_JmbgUposlenika;
-                xamlMember.Setter = set_9_Uposlenik_JmbgUposlenika;
+                xamlMember.Getter = get_10_Uposlenik_JmbgUposlenika;
+                xamlMember.Setter = set_10_Uposlenik_JmbgUposlenika;
                 break;
             case "AvMauAzil.Models.Uposlenik.UsernameUposlenika":
                 userType = (global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AvMauAzil.Models.Uposlenik");
                 xamlMember = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlMember(this, "UsernameUposlenika", "String");
-                xamlMember.Getter = get_10_Uposlenik_UsernameUposlenika;
-                xamlMember.Setter = set_10_Uposlenik_UsernameUposlenika;
+                xamlMember.Getter = get_11_Uposlenik_UsernameUposlenika;
+                xamlMember.Setter = set_11_Uposlenik_UsernameUposlenika;
                 break;
             case "AvMauAzil.Models.Uposlenik.PasswordUposlenika":
                 userType = (global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AvMauAzil.Models.Uposlenik");
                 xamlMember = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlMember(this, "PasswordUposlenika", "String");
-                xamlMember.Getter = get_11_Uposlenik_PasswordUposlenika;
-                xamlMember.Setter = set_11_Uposlenik_PasswordUposlenika;
+                xamlMember.Getter = get_12_Uposlenik_PasswordUposlenika;
+                xamlMember.Setter = set_12_Uposlenik_PasswordUposlenika;
                 break;
             case "AvMauAzil.Models.Uposlenik.EmailUposlenika":
                 userType = (global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AvMauAzil.Models.Uposlenik");
                 xamlMember = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlMember(this, "EmailUposlenika", "String");
-                xamlMember.Getter = get_12_Uposlenik_EmailUposlenika;
-                xamlMember.Setter = set_12_Uposlenik_EmailUposlenika;
+                xamlMember.Getter = get_13_Uposlenik_EmailUposlenika;
+                xamlMember.Setter = set_13_Uposlenik_EmailUposlenika;
                 break;
             case "AvMauAzil.Models.Uposlenik.EmployeeId":
                 userType = (global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AvMauAzil.Models.Uposlenik");
                 xamlMember = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlMember(this, "EmployeeId", "Int32");
-                xamlMember.Getter = get_13_Uposlenik_EmployeeId;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "AvMauAzil.Models.Uposlenik.VrstaPosla":
-                userType = (global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AvMauAzil.Models.Uposlenik");
-                xamlMember = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlMember(this, "VrstaPosla", "String");
-                xamlMember.Getter = get_14_Uposlenik_VrstaPosla;
+                xamlMember.Getter = get_14_Uposlenik_EmployeeId;
                 xamlMember.SetIsReadOnly();
                 break;
             case "AvMauAzil.ViewModels.AdminPageViewModel.SelektovaniUposlenik":

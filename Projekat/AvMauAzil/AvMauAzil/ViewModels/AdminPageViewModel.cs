@@ -30,12 +30,31 @@ namespace AvMauAzil.ViewModels
         Uposlenik selektovaniUposlenik;
         ICommand zaBrisanje, zaRegistraciju;
         String selektovanaRola;
-        string upisanoIme, upisaniJmbg;
+        string upisanoIme, upisaniJmbg, prikazUsername;
 
+        
+        public string PrikazUsername
+        {
+            get => prikazUsername;
+            set { prikazUsername = value; OnPropertyChanged("PrikazUsername"); }
+        }
         public string UpisanoIme
         {
             get => upisanoIme;
-            set { upisanoIme = value; OnPropertyChanged("UpisanoIme"); }
+            set
+            {
+                upisanoIme = value;
+                PrikazUsername = "Username : ";
+                string uname = upisanoIme.ToLower().Trim();
+                int idx = uname.IndexOf(' ');
+                while(idx != -1)
+                {
+                    uname = uname.Remove(idx, 1);
+                    idx = uname.IndexOf(' ');
+                }
+                PrikazUsername = string.Concat(PrikazUsername, uname);
+                OnPropertyChanged("UpisanoIme");
+            }
         }
         public string UpisaniJmbg
         {
@@ -50,7 +69,7 @@ namespace AvMauAzil.ViewModels
         public string SelektovanaRola
         {
             get => selektovanaRola;
-            set { selektovanaRola = value; Debug.WriteLine(selektovanaRola); OnPropertyChanged("SelektovanaRola"); }
+            set { selektovanaRola = value;  OnPropertyChanged("SelektovanaRola"); }
         }
         public ICommand ZaBrisanje
         {
@@ -70,7 +89,11 @@ namespace AvMauAzil.ViewModels
         public Uposlenik SelektovaniUposlenik
         {
             get { return selektovaniUposlenik; }
-            set { selektovaniUposlenik = value; OnPropertyChanged("SelektovaniUposlenik"); }
+            set
+            {
+                selektovaniUposlenik = value;
+                OnPropertyChanged("SelektovaniUposlenik");
+            }
         }
 
         
@@ -88,15 +111,17 @@ namespace AvMauAzil.ViewModels
 
         void funZaRegistraciju(object parametar)
         {
-            if(UpisanoIme.Length != 0 && UpisaniJmbg.Length != 0)
+            long jmbg;
+            bool longPars = long.TryParse(UpisaniJmbg, out jmbg);
+            if(UpisanoIme.Length != 0 && longPars)
             {
                 Uposlenik novi = null;
-                if (SelektovanaRola.Equals("Veterinar")) novi = new Veterinar(UpisanoIme, long.Parse(UpisaniJmbg), UpisanoIme.ToLower(), UpisanoIme.ToLower(), UpisanoIme.ToLower() + "@gmail.com");
-                else if (SelektovanaRola.Equals("Dreser")) novi = new Dreser(UpisanoIme, long.Parse(UpisaniJmbg), UpisanoIme.ToLower(), UpisanoIme.ToLower(), UpisanoIme.ToLower() + "@gmail.com");
-                else if (SelektovanaRola.Equals("Direktor")) novi = new Direktor(UpisanoIme, long.Parse(UpisaniJmbg), UpisanoIme.ToLower(), UpisanoIme.ToLower(), UpisanoIme.ToLower() + "@gmail.com");
-                else if (SelektovanaRola.Equals("Upravitelj")) novi = new Upravitelj(UpisanoIme, long.Parse(UpisaniJmbg), UpisanoIme.ToLower(), UpisanoIme.ToLower(), UpisanoIme.ToLower() + "@gmail.com");
-                else if (SelektovanaRola.Equals("Vozač")) novi = new Vozac(UpisanoIme, long.Parse(UpisaniJmbg), UpisanoIme.ToLower(), UpisanoIme.ToLower(), UpisanoIme.ToLower() + "@gmail.com");
-                else if (SelektovanaRola.Equals("Higijeničar")) novi = new OstaloOsoblje("Higijeničar", UpisanoIme, long.Parse(UpisaniJmbg), UpisanoIme.ToLower(), UpisanoIme.ToLower(), UpisanoIme.ToLower() + "@gmail.com");
+                if (SelektovanaRola.Equals("Veterinar")) novi = new Veterinar(UpisanoIme, jmbg, PrikazUsername.Remove(0,11), PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11) + "@gmail.com");
+                else if (SelektovanaRola.Equals("Dreser")) novi = new Dreser(UpisanoIme, jmbg, PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11) + "@gmail.com");
+                else if (SelektovanaRola.Equals("Direktor")) novi = new Direktor(UpisanoIme, jmbg, PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11) + "@gmail.com");
+                else if (SelektovanaRola.Equals("Upravitelj")) novi = new Upravitelj(UpisanoIme, jmbg, PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11) + "@gmail.com");
+                else if (SelektovanaRola.Equals("Vozač")) novi = new Vozac(UpisanoIme, jmbg, PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11) + "@gmail.com");
+                else if (SelektovanaRola.Equals("Higijeničar")) novi = new OstaloOsoblje("Higijeničar", UpisanoIme, jmbg, PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11) + "@gmail.com");
 
                 if(novi != null)
                 {

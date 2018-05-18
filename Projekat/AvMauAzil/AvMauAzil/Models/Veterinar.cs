@@ -17,5 +17,10 @@ namespace AvMauAzil.Models
         }
 
         public int BrojPregledanih { get => brojPregledanih; set => brojPregledanih = value; }
+
+        public override string dajVrstuPosla()
+        {
+            return "Veterinar";
+        }
     }
 }

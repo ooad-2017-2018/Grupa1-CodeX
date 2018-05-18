@@ -17,5 +17,10 @@ namespace AvMauAzil.Models
         }
 
         public string OpisSporednogPosla { get => opisSporednogPosla; set => opisSporednogPosla = value; }
+
+        public override string dajVrstuPosla()
+        {
+            return OpisSporednogPosla;
+        }
     }
 }

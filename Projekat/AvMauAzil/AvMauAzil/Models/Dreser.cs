@@ -17,5 +17,10 @@ namespace AvMauAzil.Models
         }
 
         public int BrojDresiranih { get => brojDresiranih; set => brojDresiranih = value; }
+
+        public override string dajVrstuPosla()
+        {
+            return "Dreser";
+        }
     }
 }

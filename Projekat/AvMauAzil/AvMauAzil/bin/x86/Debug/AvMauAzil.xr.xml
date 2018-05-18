@@ -4,11 +4,13 @@
     <RootPropertyPathName Name="SelektovaniUposlenik" />
     <RootPropertyPathName Name="KolekcijaUposlenika" />
     <RootPropertyPathName Name="EmailUposlenika" />
+    <RootPropertyPathName Name="VrstaPosla" />
     <RootPropertyPathName Name="ImeUposlenika" />
     <RootPropertyPathName Name="ZaBrisanje" />
     <RootPropertyPathName Name="ListaRola" />
     <RootPropertyPathName Name="SelektovanaRola" />
     <RootPropertyPathName Name="UpisaniJmbg" />
+    <RootPropertyPathName Name="PrikazUsername" />
     <RootPropertyPathName Name="ZaRegistraciju" />
     <RootPropertyPathName Name="UpisanoIme" />
   </Roots.PropertyPathNames>
@@ -29,10 +31,10 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Padding" />
-      <RootProperty Name="RowDefinitions" />
-      <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Width" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
@@ -79,6 +81,7 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="Name" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />

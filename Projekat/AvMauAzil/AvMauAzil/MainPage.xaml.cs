@@ -25,6 +25,7 @@ namespace AvMauAzil
         public MainPage()
         {
             this.InitializeComponent();
+            
         }
 
         private void btnRegister_Click(object sender, RoutedEventArgs e)
@@ -34,7 +35,10 @@ namespace AvMauAzil
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            if(txtKorisnik.Text == "Admin" && txtSifra.Password == "admin")
+
+            this.Frame.Navigate(typeof(AdminPage));
+
+            if (txtKorisnik.Text == "Admin" && txtSifra.Password == "admin")
             {
                 this.Frame.Navigate(typeof(AdminPage));
             }

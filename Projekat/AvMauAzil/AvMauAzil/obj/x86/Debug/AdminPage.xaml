@@ -16,8 +16,8 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid VerticalAlignment="Top" Background="White"
-              Margin="50"
-              Padding="20">
+              Margin="10,10,0,0"
+              Padding="20" HorizontalAlignment="Left" Height="706">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
@@ -90,13 +90,13 @@
                             <TextBlock Text="Ime i prezime:" FontSize="20" FontWeight="Normal"  Margin="8,30,20,0"  />
                         </Grid>
                         <Grid Grid.Row ="4">
-                            
+
                             <TextBox x:ConnectionId='6' x:Name="tbIme"
                  
                                 Text="{Binding UpisanoIme, Mode=TwoWay}" PlaceholderText="" Width="250" HorizontalAlignment="Left"
                                 Margin="8,10,6.6,8"  />
-                            
-                            
+
+
                         </Grid>
 
                         <Grid Grid.Row ="13">
@@ -106,10 +106,10 @@
                         </Grid>
                         <Grid Grid.Row ="6">
 
-                            <ComboBox x:ConnectionId='5' ItemsSource="{Binding ListaRola}" Margin="8,10,6.6,8" Name="cbbVrstaPosla" HorizontalAlignment="Left" SelectedItem="{Binding SelektovanaRola, Mode=TwoWay}"   
+                            <TextBlock x:ConnectionId='5' Text="{Binding PrikazUsername, Mode=OneWay}" FontSize="18" Margin="8,10,6.6,8" Name="tbUsername" HorizontalAlignment="Left"    
                             VerticalAlignment="Top" Grid.Column="1" Width="250" Height="30">
-                                <!-- ComboBox ima source iz ListaRola, i pridruzuje selektovanojroli-->
-                            </ComboBox>
+                            
+                            </TextBlock>
                         </Grid>
 
                         <Grid Grid.Row ="7">
@@ -209,6 +209,7 @@
                                         <DataTemplate                            >
                                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
                                                 <TextBlock Text="{Binding ImeUposlenika}" Margin="0,0,20,0"/>
+                                                <TextBlock Text="{Binding VrstaPosla}" Margin="0,0,20,0"/>
                                                 <TextBlock Text="{Binding EmailUposlenika}"/>
                                             </StackPanel>
                                         </DataTemplate>
@@ -216,7 +217,7 @@
 
                                 </ListView>
                             </Grid>
-                           <!-- <Grid Grid.Row ="6">
+                            <!-- <Grid Grid.Row ="6">
                                 <Button x:Name="btnBrisi"
                        
                             Width="320"

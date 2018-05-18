@@ -39,6 +39,20 @@ namespace AvMauAzil.Models
             // upis u bazu
         }
 
+        public static bool containsId(Int32 id)
+        {
+            foreach(Uposlenik u in listaUposlenika)
+            {
+                if (u.EmployeeId == id) return true;
+            }
+            return false;
+        }
+
+        public static int brojUposlenih()
+        {
+            return listaUposlenika.Count;
+        }
+
         public static void brisiUposlenika(long jmbg)
         {
             for(int i = 0; i < listaUposlenika.Count; i++)

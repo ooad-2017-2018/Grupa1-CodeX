@@ -11,5 +11,10 @@ namespace AvMauAzil.Models
         public Direktor(string imeUposlenika, long jmbgUposlenika, string usernameUposlenika, string passwordUposlenika, string emailUposlenika)
             : base(imeUposlenika, jmbgUposlenika, usernameUposlenika, passwordUposlenika, emailUposlenika) { }
 
+        public override string dajVrstuPosla()
+        {
+            return "Direktor";
+        }
+
     }
 }
