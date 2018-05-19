@@ -140,7 +140,7 @@
 
                         </Grid>
                         <Grid Grid.Row ="12">
-                            <TextBlock Text="xxxxxxxxxxxxxxxxxx" FontSize="20"  FontWeight="Normal"  Foreground="#e21429" Margin="10,0,25,0"  />
+                            <TextBlock Text="{Binding ValidationText, Mode=TwoWay}" FontSize="20"  FontWeight="Normal"  Foreground="#e21429" Margin="10,0,25,0"  />
                             <!--
                         <SearchBox x:Name="mySearchBox" 
                                      HorizontalAlignment="Left"

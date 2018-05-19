@@ -102,7 +102,7 @@
                         <Grid Grid.Row ="13">
 
                             <Button Command="{Binding ZaRegistraciju}" Content="Registriraj" FontSize="14"   Background="#6bd122"
-                        Foreground="White" FontWeight="Normal" Width="320" Margin="8,60,20,0"  />
+                        Foreground="White" FontWeight="Normal" Width="320" Margin="8,32,20,0"  />
                         </Grid>
                         <Grid Grid.Row ="6">
 
@@ -140,6 +140,7 @@
 
                         </Grid>
                         <Grid Grid.Row ="12">
+                            <TextBlock Text="{Binding ValidationText, Mode=TwoWay}" FontSize="20"  FontWeight="Normal"  Foreground="#e21429" Margin="10,0,25,0"  />
                             <!--
                         <SearchBox x:Name="mySearchBox" 
                                      HorizontalAlignment="Left"

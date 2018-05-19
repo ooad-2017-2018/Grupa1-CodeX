@@ -710,3 +710,8 @@ C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Newtonsoft
 C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\Microsoft.Azure.Mobile.Client\en-US\Microsoft.WindowsAzure.MobileServices.Resources.resw
 C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\AvMauAzil.csproj.GenerateResource.Cache
 C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\Microsoft.Azure.Mobile.Client.pri.xml
+C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Microsoft.Azure.Mobile.Client.dll
+C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\Microsoft.Azure.Mobile.Client\en-US\Microsoft.WindowsAzure.MobileServices.Resources.resw
+C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\AvMauAzil.csproj.GenerateResource.Cache
+C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\Microsoft.Azure.Mobile.Client.pri.xml

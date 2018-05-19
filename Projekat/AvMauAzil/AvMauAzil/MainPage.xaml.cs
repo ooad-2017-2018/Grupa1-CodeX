@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AvMauAzil.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,53 +26,37 @@ namespace AvMauAzil
         public MainPage()
         {
             this.InitializeComponent();
-            
         }
 
-        private void btnRegister_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        private void btnRegister_Click(object sender, RoutedEventArgs e) { }
+        
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
 
-            this.Frame.Navigate(typeof(AdminPage));
-
-            if (txtKorisnik.Text == "Admin" && txtSifra.Password == "admin")
+            if ((txtKorisnik.Text == "Ajna" && txtSifra.Password == "ajna") || (txtKorisnik.Text == "Avda" && txtSifra.Password == "avda") || (txtKorisnik.Text == "Edo" && txtSifra.Password == "edo"))
             {
                 this.Frame.Navigate(typeof(AdminPage));
             }
+       
         }
 
-        private void txtKorisnik_TextChanged(object sender, TextChangedEventArgs e)
-        {
+        private void txtKorisnik_TextChanged(object sender, TextChangedEventArgs e) { }
+        
 
-        }
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e) { }
+        
 
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
-        {
+        private void TextBlock_SelectionChanged_1(object sender, RoutedEventArgs e) { }
+       
 
-        }
+        private void TextBlock_SelectionChanged_2(object sender, RoutedEventArgs e) { }
+        
 
-        private void TextBlock_SelectionChanged_1(object sender, RoutedEventArgs e)
-        {
+        private void TextBlock_SelectionChanged_3(object sender, RoutedEventArgs e) { }
+        
 
-        }
-
-        private void TextBlock_SelectionChanged_2(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void TextBlock_SelectionChanged_3(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void TextBlock_SelectionChanged_4(object sender, RoutedEventArgs e)
-        {
-
-        }
+        private void TextBlock_SelectionChanged_4(object sender, RoutedEventArgs e) { }
+       
     }
 }

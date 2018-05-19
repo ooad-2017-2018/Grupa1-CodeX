@@ -35,9 +35,13 @@ namespace AvMauAzil.ViewModels
         Uposlenik selektovaniUposlenik;
         ICommand zaBrisanje, zaRegistraciju;
         String selektovanaRola;
-        string upisanoIme, upisaniJmbg, prikazUsername;
+        string upisanoIme, upisaniJmbg, prikazUsername, validationText;
 
-        
+        public string ValidationText
+        {
+            get => validationText;
+            set { validationText = value; OnPropertyChanged("ValidationText"); }
+        }
         public string PrikazUsername
         {
             get => prikazUsername;
@@ -105,34 +109,42 @@ namespace AvMauAzil.ViewModels
 
         public AdminPageViewModel()
         {
+            ContainerClass.loadData();
+            ValidationText = "";
             UpisaniJmbg = "";
             UpisanoIme = "";
             SelektovanaRola = ListaRola.ElementAt(0);
             ZaRegistraciju = new RelayCommand<object>(funZaRegistraciju, boolFunZaRegistraciju);
             ZaBrisanje = new RelayCommand<object>(funZaBrisanje, boolFunZaBrisanje);
             kolekcijaUposlenika = new ObservableCollection<Uposlenik>(ContainerClass.dajListuUposlenika() as List<Uposlenik>);
+            
         }
 
 
         void funZaRegistraciju(object parametar)
         {
+            UpisanoIme = UpisanoIme.Trim();
             long jmbg;
-            bool longPars = long.TryParse(UpisaniJmbg, out jmbg);
-            if(UpisanoIme.Length != 0 && longPars)
+            if(long.TryParse(UpisaniJmbg, out jmbg) && UpisaniJmbg.Length == 13 && UpisanoIme.Length != 0)
             {
                 Uposlenik novi = null;
-                if (SelektovanaRola.Equals("Veterinar")) novi = new Veterinar(UpisanoIme, jmbg, PrikazUsername.Remove(0,11), PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11) + "@gmail.com");
+                if (SelektovanaRola.Equals("Veterinar")) novi = new Veterinar(UpisanoIme, jmbg, PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11) + "@gmail.com");
                 else if (SelektovanaRola.Equals("Dreser")) novi = new Dreser(UpisanoIme, jmbg, PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11) + "@gmail.com");
                 else if (SelektovanaRola.Equals("Direktor")) novi = new Direktor(UpisanoIme, jmbg, PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11) + "@gmail.com");
                 else if (SelektovanaRola.Equals("Upravitelj")) novi = new Upravitelj(UpisanoIme, jmbg, PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11) + "@gmail.com");
                 else if (SelektovanaRola.Equals("Vozač")) novi = new Vozac(UpisanoIme, jmbg, PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11) + "@gmail.com");
                 else if (SelektovanaRola.Equals("Higijeničar")) novi = new OstaloOsoblje("Higijeničar", UpisanoIme, jmbg, PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11) + "@gmail.com");
 
-                if(novi != null)
+                if (novi != null)
                 {
+                    ValidationText = "Registracija uspjesna.";
                     KolekcijaUposlenika.Add(novi);
                     ContainerClass.dodajUposlenika(novi);
                 }
+            }
+            else
+            {
+                ValidationText = "Greska sa unosom podataka.";
             } 
         }
 
@@ -147,7 +159,7 @@ namespace AvMauAzil.ViewModels
             {
                 if (KolekcijaUposlenika[i].JmbgUposlenika == SelektovaniUposlenik.JmbgUposlenika)
                 {
-                    
+                    ValidationText = "Brisanje uspjesno.";
                     ContainerClass.brisiUposlenika(KolekcijaUposlenika[i].JmbgUposlenika);
                     KolekcijaUposlenika.RemoveAt(i);
                     break;
