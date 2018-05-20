@@ -132,7 +132,7 @@ namespace AvMauAzil.AvMauAzil_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[20];
+            _typeNameTable = new string[19];
             _typeNameTable[0] = "AvMauAzil.ViewModels.AdminPageViewModel";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "String";
@@ -152,9 +152,8 @@ namespace AvMauAzil.AvMauAzil_XamlTypeInfo
             _typeNameTable[16] = "AvMauAzil.PrijaviZivotinju";
             _typeNameTable[17] = "AvMauAzil.RegistracijaKorisnika";
             _typeNameTable[18] = "AvMauAzil.RegistracijaZivotinje";
-            _typeNameTable[19] = "AvMauAzil.UposleniAdminPage";
 
-            _typeTable = new global::System.Type[20];
+            _typeTable = new global::System.Type[19];
             _typeTable[0] = typeof(global::AvMauAzil.ViewModels.AdminPageViewModel);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::System.String);
@@ -174,7 +173,6 @@ namespace AvMauAzil.AvMauAzil_XamlTypeInfo
             _typeTable[16] = typeof(global::AvMauAzil.PrijaviZivotinju);
             _typeTable[17] = typeof(global::AvMauAzil.RegistracijaKorisnika);
             _typeTable[18] = typeof(global::AvMauAzil.RegistracijaZivotinje);
-            _typeTable[19] = typeof(global::AvMauAzil.UposleniAdminPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -220,7 +218,6 @@ namespace AvMauAzil.AvMauAzil_XamlTypeInfo
         private object Activate_16_PrijaviZivotinju() { return new global::AvMauAzil.PrijaviZivotinju(); }
         private object Activate_17_RegistracijaKorisnika() { return new global::AvMauAzil.RegistracijaKorisnika(); }
         private object Activate_18_RegistracijaZivotinje() { return new global::AvMauAzil.RegistracijaZivotinje(); }
-        private object Activate_19_UposleniAdminPage() { return new global::AvMauAzil.UposleniAdminPage(); }
         private void VectorAdd_3_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.String>)instance;
@@ -380,13 +377,6 @@ namespace AvMauAzil.AvMauAzil_XamlTypeInfo
             case 18:   //  AvMauAzil.RegistracijaZivotinje
                 userType = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_18_RegistracijaZivotinje;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 19:   //  AvMauAzil.UposleniAdminPage
-                userType = new global::AvMauAzil.AvMauAzil_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_UposleniAdminPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

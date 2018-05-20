@@ -109,7 +109,6 @@ namespace AvMauAzil.ViewModels
 
         public AdminPageViewModel()
         {
-            ContainerClass.loadData();
             ValidationText = "";
             UpisaniJmbg = "";
             UpisanoIme = "";
@@ -127,6 +126,11 @@ namespace AvMauAzil.ViewModels
             long jmbg;
             if(long.TryParse(UpisaniJmbg, out jmbg) && UpisaniJmbg.Length == 13 && UpisanoIme.Length != 0)
             {
+                if (containsJmbg(jmbg))
+                {
+                    ValidationText = "Jmbg postoji.";
+                    return;
+                }
                 Uposlenik novi = null;
                 if (SelektovanaRola.Equals("Veterinar")) novi = new Veterinar(UpisanoIme, jmbg, PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11) + "@gmail.com");
                 else if (SelektovanaRola.Equals("Dreser")) novi = new Dreser(UpisanoIme, jmbg, PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11), PrikazUsername.Remove(0, 11) + "@gmail.com");
@@ -172,6 +176,14 @@ namespace AvMauAzil.ViewModels
             return true;
         }
 
+        bool containsJmbg(long jmbg)
+        {
+            foreach(Uposlenik u in KolekcijaUposlenika)
+            {
+                if (u.JmbgUposlenika == jmbg) return true;
+            }
+            return false;
+        }
        
     }
 }

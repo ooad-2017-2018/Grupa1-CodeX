@@ -55,8 +55,8 @@
                     </Grid.ColumnDefinitions>
                     <!--Image x:Name="slika"  Grid.Column="0" HorizontalAlignment="Left" Height="142" Margin="8,20,20,200" VerticalAlignment="Top" Width="150" Source="avmau.png" Grid.ColumnSpan="2" /> -->
                     <Image x:Name="logo" Grid.Column="0" HorizontalAlignment="Left"  Width="199" Height="200" Margin="8,0,-207,0" Source="avmau.jpg" Grid.ColumnSpan="3" />
-                    <TextBlock Text="AV-MAU SARAJEVO CITY SHELTER" FontSize="45" FontWeight="Bold" Grid.Column="2" Margin="0,80,30,0" Grid.ColumnSpan="3" SelectionChanged="TextBlock_SelectionChanged_4" />
-                    <TextBlock Text="AV-MAU AZIL GRADA SARAJEVA" FontSize="45" FontWeight="Bold" Grid.Column="2" Margin="0,128,30,0" Grid.ColumnSpan="3" SelectionChanged="TextBlock_SelectionChanged_4" />
+                    <TextBlock Text="AV-MAU SARAJEVO CITY SHELTER" FontSize="45" FontWeight="Bold" Grid.Column="2" Margin="0,80,30,0" Grid.ColumnSpan="3"  />
+                    <TextBlock Text="AV-MAU AZIL GRADA SARAJEVA" FontSize="45" FontWeight="Bold" Grid.Column="2" Margin="0,128,30,0" Grid.ColumnSpan="3"  />
                 </Grid>
 
                 <Grid Grid.Row ="3">
@@ -97,7 +97,7 @@
                          Width="300"
                          HorizontalAlignment="Left"
                      PlaceholderText="Korisničko ime"
-                     Margin="8,130,6.6,8" TextChanged="txtKorisnik_TextChanged" Grid.ColumnSpan="3"/>
+                     Margin="8,130,6.6,8"  Grid.ColumnSpan="3"/>
                 </Grid>
 
                 <Grid  Grid.Row="8">

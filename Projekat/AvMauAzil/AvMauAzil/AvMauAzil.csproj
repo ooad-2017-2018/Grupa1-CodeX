@@ -127,15 +127,9 @@
     <Compile Include="RegistracijaZivotinje.xaml.cs">
       <DependentUpon>RegistracijaZivotinje.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UposleniAdminPage.xaml.cs">
-      <DependentUpon>UposleniAdminPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ViewModels\AdminPageViewModel.cs" />
-    <Compile Include="ViewModels\INavigationService.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
-    <Compile Include="ViewModels\NavigationService.cs" />
     <Compile Include="ViewModels\RelayCommand.cs" />
-    <Compile Include="ViewModels\RelayCommandSecond.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -188,10 +182,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RegistracijaZivotinje.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UposleniAdminPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -13,33 +13,17 @@ namespace AvMauAzil.Models
 {
     public static class ContainerClass
     {
-        // ovo ce da bude kao Organization, direktorij Klase kao Models
-
-
         static IMobileServiceTable<uposlenici> userTableObj = App.MobileService.GetTable<uposlenici>();
-
-
-
-        // ovdje ce da se izvuce iz baze sta
-
-        //static List<uposlenici> listaUposlenikaTabela = new List<uposlenici>();
-
 
         static List<Uposlenik> listaUposlenika = new List<Uposlenik> {
             new Veterinar("MC Seki", 2101993172238, "mcseki", "mcseki", "mcseki@gmail.com"),
             new Dreser("Solomun", 1203991174441, "solomun", "solomun", "solomun@gmail.com"),
             new Direktor("Mico Micic", 1111966151008, "micomicic", "micomicic", "micomicic@gmail.com"),
             new Upravitelj("Dino Merlin", 2401961170011, "dinomerlin", "dinomerlin", "dinomerlin@gmail.com"),
-            new OstaloOsoblje("Cleaning Lady", "Raza", 1008975176774, "raza", "raza", "raza@gmail.com"),
+            new OstaloOsoblje("Higijeničar", "Raza", 1008975176774, "raza", "raza", "raza@gmail.com"),
             new Vozac("Bule", 1204958170212, "bule", "bule", "bule@gmail.com")
         };
         
-        static List<Zivotinja> listaZivotinja = new List<Zivotinja> {
-            new Macka("Persian", "Mersiha", 4),
-            new Macka("Ulicar", "Miki", 3),
-            new Pas("Ulicar", "Nerko", 7),
-            new Pas("Rott", "Milica", 6)
-        };
 
         public static void dodajUposlenika(Uposlenik u)
         {
@@ -63,13 +47,6 @@ namespace AvMauAzil.Models
             
         }
 
-        public static void dodajZivotinju(Zivotinja z)
-        {
-            listaZivotinja.Add(z);
-            // upis u bazu
-            
-        }
-
         public static bool containsId(Int32 id)
         {
             foreach(Uposlenik u in listaUposlenika)
@@ -86,37 +63,44 @@ namespace AvMauAzil.Models
 
         public static void brisiUposlenika(long jmbg)
         {
+            Uposlenik zaObrisat = null;
             for(int i = 0; i < listaUposlenika.Count; i++)
             {
                 if(listaUposlenika[i].JmbgUposlenika == jmbg)
                 {
-                    listaUposlenika.RemoveAt(i);
+                    zaObrisat = listaUposlenika.ElementAt(i);
                     break;
                 }
             }
             //baza
-        }
-
-        public static void brisiZivotinju(int id)
-        {
-            for (int i = 0; i < listaZivotinja.Count; i++)
+            if(zaObrisat != null)
             {
-                if (listaZivotinja[i].AnimalId == id)
+                try
                 {
-                    listaZivotinja.RemoveAt(i);
-                    break;
+                    uposlenici obj = new uposlenici();
+                    obj.id = zaObrisat.EmployeeId.ToString();
+                    obj.ime_prezime = zaObrisat.ImeUposlenika;
+                    obj.jmbg = zaObrisat.JmbgUposlenika.ToString();
+                    obj.naziv_posla = zaObrisat.VrstaPosla;
+                    obj.user_pass = zaObrisat.UsernameUposlenika;
+                    userTableObj.DeleteAsync(obj);
+                    Debug.WriteLine("Uspjesno obrisan uposlenik.");
                 }
+                catch (Exception)
+                {
+                    Debug.WriteLine("Neuspjesno obrisan uposlenik.");
+                }
+                listaUposlenika.Remove(zaObrisat);
             }
-            //baza
+            
         }
 
-        async private static Task getData()
+        async public static Task getData()
         {
             var listaTabela = await userTableObj.ToListAsync();
-            Debug.WriteLine(listaTabela.Count + "  ..");
+            Debug.WriteLine("Vraceno iz baze: " + listaTabela.Count);
             foreach (uposlenici up in listaTabela)
             {
-                Debug.WriteLine(listaTabela.Count + "  ..");
                 string vrstaP = up.naziv_posla;
                 if (vrstaP.Equals("Veterinar")) listaUposlenika.Add(new Veterinar(up.ime_prezime, long.Parse(up.jmbg), up.user_pass, up.user_pass, up.user_pass + "@gmail.com"));
                 else if (vrstaP.Equals("Dreser")) listaUposlenika.Add(new Dreser(up.ime_prezime, long.Parse(up.jmbg), up.user_pass, up.user_pass, up.user_pass + "@gmail.com"));
@@ -128,21 +112,10 @@ namespace AvMauAzil.Models
             }
         }
 
-        async public static void loadData()
-        {
-            await getData();
-        }
-
         public static List<Uposlenik> dajListuUposlenika()
         {
-         
+            Debug.WriteLine("dajListuUposlenika() vraceno: " + listaUposlenika.Count);
             return listaUposlenika;
-        }
-        
-
-        public static List<Zivotinja> dajListuZivotinja()
-        {
-            return listaZivotinja;
         }
         
     }

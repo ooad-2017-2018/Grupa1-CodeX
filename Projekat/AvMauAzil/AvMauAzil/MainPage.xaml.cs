@@ -13,6 +13,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using AvMauAzil.Models;
+using System.Threading.Tasks;
+using System.Diagnostics;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -23,40 +26,25 @@ namespace AvMauAzil
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        Task taskA;
         public MainPage()
         {
             this.InitializeComponent();
+            taskA =  ContainerClass.getData();
+            
         }
-
-        private void btnRegister_Click(object sender, RoutedEventArgs e) { }
-        
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
 
             if ((txtKorisnik.Text == "Ajna" && txtSifra.Password == "ajna") || (txtKorisnik.Text == "Avda" && txtSifra.Password == "avda") || (txtKorisnik.Text == "Edo" && txtSifra.Password == "edo"))
             {
-                this.Frame.Navigate(typeof(AdminPage));
+                if (taskA.IsCompleted)
+                    this.Frame.Navigate(typeof(AdminPage));
+                else
+                    Debug.WriteLine("Belaj sa loadData.");
             }
        
-        }
-
-        private void txtKorisnik_TextChanged(object sender, TextChangedEventArgs e) { }
-        
-
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e) { }
-        
-
-        private void TextBlock_SelectionChanged_1(object sender, RoutedEventArgs e) { }
-       
-
-        private void TextBlock_SelectionChanged_2(object sender, RoutedEventArgs e) { }
-        
-
-        private void TextBlock_SelectionChanged_3(object sender, RoutedEventArgs e) { }
-        
-
-        private void TextBlock_SelectionChanged_4(object sender, RoutedEventArgs e) { }
-       
+        }  
     }
 }
