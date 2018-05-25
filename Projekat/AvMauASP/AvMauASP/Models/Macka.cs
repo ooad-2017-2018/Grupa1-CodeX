@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace AvMauAzil.Models
 {
-    public class Macka : Zivotinja
+    public class Macka 
     {
-        String rasa;
+       /*( String rasa;
 
+        public Macka() { }
         public Macka(string rasa, string imeZivotinje, int tezinaZivotinje, bool udomljenaZivotinja = false)
             : base(imeZivotinje, tezinaZivotinje, udomljenaZivotinja)
         {
             this.rasa = rasa;
         }
 
-        public string Rasa { get => rasa; set => rasa = value; }
+        public string Rasa { get => rasa; set => rasa = value; }*/
     }
 }

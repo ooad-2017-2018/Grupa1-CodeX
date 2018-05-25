@@ -196,8 +196,20 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\DirektorController.cs" />
+    <Compile Include="Controllers\DreserController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KorisnikController.cs" />
+    <Compile Include="Controllers\MackaController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\OstaloOsobljeController.cs" />
+    <Compile Include="Controllers\PasController.cs" />
+    <Compile Include="Controllers\UpravaController.cs" />
+    <Compile Include="Controllers\UpraviteljController.cs" />
+    <Compile Include="Controllers\VeterinarController.cs" />
+    <Compile Include="Controllers\VozacController.cs" />
+    <Compile Include="Controllers\ZivotinjeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -210,7 +222,7 @@
     <Compile Include="Models\Macka.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\OstaloOsoblje.cs" />
-    <Compile Include="Models\Pas0.cs" />
+    <Compile Include="Models\Pas.cs" />
     <Compile Include="Models\Uposlenik.cs" />
     <Compile Include="Models\Uprava.cs" />
     <Compile Include="Models\Upravitelj.cs" />
@@ -221,6 +233,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-flatly.css" />
+    <Content Include="Content\bootstrap-lumen.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -279,9 +293,21 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Zivotinje\Random.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Default\" />
+    <Folder Include="Views\Direktor\" />
+    <Folder Include="Views\Dreser\" />
+    <Folder Include="Views\Korisnik\" />
+    <Folder Include="Views\Macka\" />
+    <Folder Include="Views\OstaloOsoblje\" />
+    <Folder Include="Views\Pas\" />
+    <Folder Include="Views\Uprava\" />
+    <Folder Include="Views\Upravitelj\" />
+    <Folder Include="Views\Veterinar\" />
+    <Folder Include="Views\Vozac\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
