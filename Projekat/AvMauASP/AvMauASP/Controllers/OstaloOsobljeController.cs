@@ -13,6 +13,7 @@ namespace AvMauASP.Controllers
         public ActionResult Index()
         {
             return View();
+            
         }
     }
 }

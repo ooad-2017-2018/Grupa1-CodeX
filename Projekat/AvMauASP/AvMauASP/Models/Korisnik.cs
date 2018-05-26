@@ -15,6 +15,8 @@ namespace AvMauASP.Models
         String passwordKorisnika;
         String emailKorisnika;
 
+        public Korisnik() { }
+
         public Korisnik(string imeKorisnika, long jmbgKorisnika, string usernameKorisnika, string passwordKorisnika, string emailKorisnika)
         {
             globalId++;

@@ -13,6 +13,12 @@ namespace AvMauASP
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapMvcAttributeRoutes();
+            /*routes.MapRoute(
+                "ZivotinjePoDatumuPrispeca",
+                "zivotinje/primljene/{year}/{month}," +
+                new { controller = "Zivotinje", action = "PoDatumuPrispeca" });
+            */
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

@@ -1,8 +1,9 @@
-﻿@model AvMauAzil.Models.Zivotinja
+﻿@model AvMauASP.ViewModels.RandomZivotinjaViewModel
 @{
 	ViewBag.Title = "Random";
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@Model.Rasa</h2>
+<h2>@Model.Zivotinja.ImeZivotinje</h2>
+@Model.Korisnici
 
