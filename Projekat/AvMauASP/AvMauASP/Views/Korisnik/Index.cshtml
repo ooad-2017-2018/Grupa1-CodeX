@@ -1,0 +1,61 @@
+﻿@model IEnumerable<AvMauASP.Models.Korisnik>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ImeKorisnika)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrezimeKorisnika)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JmbgKorisnika)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UsernameKorisnika)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PasswordKorisnika)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailKorisnika)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImeKorisnika)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrezimeKorisnika)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JmbgKorisnika)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UsernameKorisnika)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PasswordKorisnika)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmailKorisnika)
+        </td>
+      
+
+    </tr>
+}
+
+</table>

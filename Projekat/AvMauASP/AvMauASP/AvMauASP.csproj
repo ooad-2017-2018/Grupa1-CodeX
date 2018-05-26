@@ -209,7 +209,7 @@
     <Compile Include="Controllers\UpraviteljController.cs" />
     <Compile Include="Controllers\VeterinarController.cs" />
     <Compile Include="Controllers\VozacController.cs" />
-    <Compile Include="Controllers\ZivotinjeController.cs" />
+    <Compile Include="Controllers\ZivotinjaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -222,6 +222,7 @@
     <Compile Include="Models\Macka.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\OstaloOsoblje.cs" />
+    <Compile Include="Models\OurDBContext.cs" />
     <Compile Include="Models\Pas.cs" />
     <Compile Include="Models\Uposlenik.cs" />
     <Compile Include="Models\Uprava.cs" />
@@ -260,6 +261,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\Shared\avmau2.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -294,14 +296,17 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Zivotinje\Random.cshtml" />
+    <Content Include="Views\Zivotinja\Random.cshtml" />
+    <Content Include="Views\Korisnik\Register.cshtml" />
+    <Content Include="Views\Korisnik\Login.cshtml" />
+    <Content Include="Views\Korisnik\LoggedIn.cshtml" />
+    <Content Include="Views\Korisnik\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Default\" />
     <Folder Include="Views\Direktor\" />
     <Folder Include="Views\Dreser\" />
-    <Folder Include="Views\Korisnik\" />
     <Folder Include="Views\Macka\" />
     <Folder Include="Views\OstaloOsoblje\" />
     <Folder Include="Views\Pas\" />
