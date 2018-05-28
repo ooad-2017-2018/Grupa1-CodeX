@@ -59,14 +59,15 @@ namespace AvMauASP.Controllers
         [HttpPost]
         public ActionResult Login(Korisnik user)
         {
-            //
-            ContainerClass.LoggedInKorisnik = user;
-            //
+            
             using (OurDBContext db = new OurDBContext())
             {
                 var usr = db.korisnik.Single(u => u.UsernameKorisnika == user.UsernameKorisnika && u.PasswordKorisnika == user.PasswordKorisnika);
                 if (usr != null)
                 {
+                    //
+                    ContainerClass.LoggedInKorisnik = usr;
+                    //
                     Session["UserId"] = usr.UserId.ToString();
                     Session["UsernameKorisnika"] = usr.UsernameKorisnika.ToString();
                     return RedirectToAction("LoggedIn");

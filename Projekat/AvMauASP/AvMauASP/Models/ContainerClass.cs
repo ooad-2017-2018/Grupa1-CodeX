@@ -20,7 +20,11 @@ namespace AvMauASP.Models
 
         public static Korisnik LoggedInKorisnik { get; set; }
 
-        public static List<Korisnik> ListaKorisnika { get; set; }
+
+
+        private static List<Korisnik> listaKorisnika = new List<Korisnik>();
+
+        public static List<Korisnik> ListaKorisnika { get { return listaKorisnika; } set { listaKorisnika = value; } }
 
 
         public static void dodajKorisnika(Korisnik k)
