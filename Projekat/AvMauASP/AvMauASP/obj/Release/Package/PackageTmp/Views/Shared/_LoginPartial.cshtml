@@ -1,0 +1,25 @@
+﻿
+@using AvMauASP.Models
+
+
+@if (@ContainerClass.LoggedInKorisnikValidan())
+{
+    
+      <ul class="nav navbar-nav navbar-right">
+            <li>
+                <!-- TODO: DODATI NESTO KAD KLIKNE NA SEBE OVDJE-->
+                @Html.ActionLink("Hello "+ ContainerClass.LoggedInKorisnik.UsernameKorisnika + "!", "Index", "Korisnik") 
+            </li>
+            <li> @Html.ActionLink("Odjavi se", "Logoff", "Korisnik") </li>
+        </ul>
+    
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("Registriraj se", "Register", "Korisnik")</li>
+        <li>@Html.ActionLink("Prijavi se", "Login", "Korisnik")</li>
+    </ul>
+}
+
+<!-- , routeValues: null, htmlAttributes: new { id = "registerLink" } , routeValues: null, htmlAttributes: new { id = "loginLink" }    -->

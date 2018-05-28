@@ -22,6 +22,7 @@ namespace AvMauASP.Controllers
 
 
         //Registracija
+        [HttpGet]
         public ActionResult Register()
         {
             return View();
@@ -32,6 +33,8 @@ namespace AvMauASP.Controllers
         {
             if (ModelState.IsValid)
             {
+                ContainerClass.dodajKorisnika(account); // dodavanje
+
                 using(OurDBContext db = new OurDBContext())
                 {
                     db.korisnik.Add(account);
@@ -43,8 +46,10 @@ namespace AvMauASP.Controllers
             return View();
         }
 
-        //Login
 
+
+        //Login
+        [HttpGet]
         public ActionResult Login()
         {
 
@@ -54,6 +59,9 @@ namespace AvMauASP.Controllers
         [HttpPost]
         public ActionResult Login(Korisnik user)
         {
+            //
+            ContainerClass.LoggedInKorisnik = user;
+            //
             using (OurDBContext db = new OurDBContext())
             {
                 var usr = db.korisnik.Single(u => u.UsernameKorisnika == user.UsernameKorisnika && u.PasswordKorisnika == user.PasswordKorisnika);
@@ -82,6 +90,15 @@ namespace AvMauASP.Controllers
             {
                 return RedirectToAction("Login");
             }
+        }
+
+        public ActionResult Logoff()
+        {
+            ContainerClass.LoggedInKorisnik = null;
+            Session["UserId"] = null;
+            Session["UsernameKorisnika"] = null;
+
+            return RedirectToAction("Login");
         }
 
     }

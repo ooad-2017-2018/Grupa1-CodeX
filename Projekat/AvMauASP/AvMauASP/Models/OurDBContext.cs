@@ -11,5 +11,22 @@ namespace AvMauASP.Models
     public class OurDBContext : DbContext
     {
         public DbSet<Korisnik> korisnik { get; set; }
+
+
+        // private const string connectionStringName = "Name=avmauconnect1";
+
+        // public OurDBContext() : base(connectionStringName) { }
+
+
+
+
+        // protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        // {
+        /*
+        modelBuilder.Conventions.Add(
+            new AttributeToColumnAnnotationConvention<TableColumnAttribute, string>(
+                "ServiceColumnTable", (property, attributes) => attributes.Single().ColumnType.ToString()));
+                */
+        // }
     }
 }

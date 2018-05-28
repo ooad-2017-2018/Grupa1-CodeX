@@ -1,12 +1,22 @@
-﻿
+﻿@using AvMauASP.Models
 @{
-	ViewBag.Title = "LoggedIn";
-	Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "LoggedIn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<h1> <br /> <br /> </h1>
 
-
+<!--
 @if (Session["UserId"] != null)
 {
 <h4>Hello @Session["UsernameKorisnika"].ToString()</h4>
+}
+ -->
+@if (ContainerClass.LoggedInKorisnikValidan())
+{
+<h3>Dobrodošli @ContainerClass.LoggedInKorisnik.ImeKorisnika @ContainerClass.LoggedInKorisnik.PrezimeKorisnika!</h3>
+    <p class="lead">
+        Za dalje operacije vratite se na početnu stranicu.
+    </p>
+    <p><a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-lg">Početna</a></p>
 }

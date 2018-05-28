@@ -11,6 +11,6 @@ namespace AvMauASP.ViewModels
     public class RandomZivotinjaViewModel
     {
         public Zivotinja Zivotinja {get; set;}
-       public List<Korisnik> Korisnici { get; set; }
+        public List<Korisnik> Korisnici { get; set; }
     }
 }

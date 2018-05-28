@@ -7,13 +7,44 @@ using System.Threading.Tasks;
 //using Microsoft.WindowsAzure.MobileServices;
 //using Windows.UI.Popups;
 using System.Diagnostics;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNet.Identity;
+using Microsoft.Owin.Security;
 
 
-namespace AvMauAzil.Models
+
+namespace AvMauASP.Models
 {
     public static class ContainerClass
     {
-        //static IMobileServiceTable<uposlenici> userTableObj = App.MobileService.GetTable<uposlenici>();
+
+        public static Korisnik LoggedInKorisnik { get; set; }
+
+        public static List<Korisnik> ListaKorisnika { get; set; }
+
+
+        public static void dodajKorisnika(Korisnik k)
+        {
+            if (!ListaKorisnika.Contains(k))
+            {
+                ListaKorisnika.Add(k);
+            }
+            
+        }
+
+        public static string dajString()
+        {
+            return "String";
+        }
+
+
+        public static bool LoggedInKorisnikValidan()
+        {
+            return !(LoggedInKorisnik == null);
+        }
+
+        /*
+        static IMobileServiceTable<uposlenici> userTableObj = App.MobileService.GetTable<uposlenici>();
 
         static List<Uposlenik> listaUposlenika = new List<Uposlenik> {
             new Veterinar("MC Seki", 2101993172238, "mcseki", "mcseki", "mcseki@gmail.com"),
@@ -24,12 +55,12 @@ namespace AvMauAzil.Models
             new Vozac("Bule", 1204958170212, "bule", "bule", "bule@gmail.com")
         };
 
-
+        
         public static void dodajUposlenika(Uposlenik u)
         {
             listaUposlenika.Add(u);
             // upis u bazu
-           /* try
+            try
             {
                 uposlenici obj = new uposlenici();
                 obj.id = u.EmployeeId.ToString();
@@ -44,7 +75,7 @@ namespace AvMauAzil.Models
             {
                 Debug.WriteLine("Neuspjesno unesen uposlenik.");
             }
-            */
+            
         }
 
         public static bool containsId(Int32 id)
@@ -62,7 +93,7 @@ namespace AvMauAzil.Models
         }
 
         public static void brisiUposlenika(long jmbg)
-        { /*
+        { 
             Uposlenik zaObrisat = null;
             for (int i = 0; i < listaUposlenika.Count; i++)
             {
@@ -74,7 +105,7 @@ namespace AvMauAzil.Models
             }
             //baza
             if (zaObrisat != null)
-            {   /*
+            {   
                 try
                 {
                     uposlenici obj = new uposlenici();
@@ -111,7 +142,7 @@ namespace AvMauAzil.Models
                 else listaUposlenika.Add(new OstaloOsoblje("Higijeničar", up.ime_prezime, long.Parse(up.jmbg), up.user_pass, up.user_pass, up.user_pass + "@gmail.com"));
 
             }
-            */
+            
         }
 
         public static List<Uposlenik> dajListuUposlenika()
@@ -121,5 +152,9 @@ namespace AvMauAzil.Models
         }
        
         }
-     
+
+
+        */
+
+    }
 }
