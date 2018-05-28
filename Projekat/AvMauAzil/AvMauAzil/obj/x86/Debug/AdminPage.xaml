@@ -200,7 +200,7 @@
                             <Grid Grid.Row ="6">
                                 <Button x:ConnectionId='2' x:Name="tbImePrezime"
                                  
-                                 Command="{Binding ZaBrisanje}" Content="Izbrisi Selektovanog" Width="320" HorizontalAlignment="Left"  Background="#1cb3bc"
+                                 Command="{Binding ZaBrisanje}" Content="Izbrisi selektovanog" Width="320" HorizontalAlignment="Left"  Background="#1cb3bc"
                         Foreground="White"
                                 Margin="8,20,8.6,8"  />
                             </Grid>

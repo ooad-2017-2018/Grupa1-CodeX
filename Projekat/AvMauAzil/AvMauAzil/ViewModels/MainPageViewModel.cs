@@ -58,7 +58,7 @@ namespace AvMauAzil.ViewModels
 
         void funZaPrijavu(object parametar)
         {
-            if ((Username.Equals("Ajna") && Password.Equals("ajna")) || (Username.Equals("Avda") && Password.Equals("avda")) || (Username.Equals("Edo") && Password.Equals("edo")))
+            if ((Username.Equals("Admin") && Password.Equals("admin")) || (Username.Equals("Avda") && Password.Equals("avda")) || (Username.Equals("Edo") && Password.Equals("edo")))
             {
                 ValidationText = " ";
             }

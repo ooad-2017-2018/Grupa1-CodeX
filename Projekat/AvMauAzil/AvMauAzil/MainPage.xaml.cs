@@ -37,7 +37,7 @@ namespace AvMauAzil
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
 
-            if ((txtKorisnik.Text == "Ajna" && txtSifra.Password == "ajna") || (txtKorisnik.Text == "Avda" && txtSifra.Password == "avda") || (txtKorisnik.Text == "Edo" && txtSifra.Password == "edo"))
+            if ((txtKorisnik.Text == "Admin" && txtSifra.Password == "admin") || (txtKorisnik.Text == "Avda" && txtSifra.Password == "avda") || (txtKorisnik.Text == "Edo" && txtSifra.Password == "edo"))
             {
                 if (taskA.IsCompleted)
                     this.Frame.Navigate(typeof(AdminPage));

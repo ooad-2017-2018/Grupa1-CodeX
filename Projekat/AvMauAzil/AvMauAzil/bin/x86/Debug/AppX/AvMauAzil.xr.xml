@@ -123,6 +123,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Source" />
+      <RootProperty Name="UseLayoutRounding" />
     </RootType>
     <RootType FullName="AvMauAzil.AdminPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
@@ -140,6 +141,10 @@
     </RootType>
     <RootType FullName="AvMauAzil.PetBook" />
     <RootType FullName="AvMauAzil.ViewModels.MainPageViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
       <RootProperty Name="Password" />
       <RootProperty Name="Width" />

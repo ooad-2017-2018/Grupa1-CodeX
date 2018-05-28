@@ -14,8 +14,8 @@
 
     <Grid Background="White">
         <Grid VerticalAlignment="Top" Background="White"
-              Margin="20,20,0,0"
-              Padding="20">
+              Margin="0,30,0,0"
+              Padding="20" HorizontalAlignment="Stretch">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
@@ -54,9 +54,9 @@
                         <ColumnDefinition Width ="726*"/>
                     </Grid.ColumnDefinitions>
                     <!--Image x:Name="slika"  Grid.Column="0" HorizontalAlignment="Left" Height="142" Margin="8,20,20,200" VerticalAlignment="Top" Width="150" Source="avmau.png" Grid.ColumnSpan="2" /> -->
-                    <Image x:Name="logo" Grid.Column="0" HorizontalAlignment="Left"  Width="199" Height="200" Margin="8,0,-207,0" Source="avmau.jpg" Grid.ColumnSpan="3" />
-                    <TextBlock Text="AV-MAU SARAJEVO CITY SHELTER" FontSize="45" FontWeight="Bold" Grid.Column="2" Margin="0,80,30,0" Grid.ColumnSpan="3"  />
-                    <TextBlock Text="AV-MAU AZIL GRADA SARAJEVA" FontSize="45" FontWeight="Bold" Grid.Column="2" Margin="0,128,30,0" Grid.ColumnSpan="3"  />
+                    <Image x:Name="logo" Grid.Column="0" HorizontalAlignment="Left"  Width="199" Height="200" Margin="15,0,-207,0" Source="avmau.jpg" Grid.ColumnSpan="3" />
+                    <TextBlock Text="AV-MAU SARAJEVO CITY SHELTER" FontSize="45" FontWeight="Bold" Grid.Column="2" Margin="10,80,20,0" Grid.ColumnSpan="3"  />
+                    <TextBlock Text="AV-MAU AZIL GRADA SARAJEVA" FontSize="45" FontWeight="Bold" Grid.Column="2" Margin="10,128,20,0" Grid.ColumnSpan="3"  />
                 </Grid>
 
                 <Grid Grid.Row ="3">
@@ -97,7 +97,7 @@
                          Width="300"
                          HorizontalAlignment="Left"
                      PlaceholderText="Korisničko ime"
-                     Margin="8,130,6.6,8"  Grid.ColumnSpan="3"/>
+                     Margin="30,70,6.6,8"  Grid.ColumnSpan="3"/>
                 </Grid>
 
                 <Grid  Grid.Row="8">
@@ -112,7 +112,7 @@
                               Width="300"
                          HorizontalAlignment="Left"
                      PlaceholderText="Šifra"
-                     Margin="8" Grid.ColumnSpan="2"/>
+                     Margin="30,10,0,0" Grid.ColumnSpan="2"/>
                 </Grid>
 
                 <Grid  Grid.Row="9">
@@ -121,17 +121,13 @@
                         <ColumnDefinition Width="674*"/>
                         <ColumnDefinition Width ="726*"/>
                     </Grid.ColumnDefinitions>
-                    <!--<CheckBox x:Name="ckBZapamti"
+                    <CheckBox x:Name="ckBZapamti" 
                               Grid.Column="0"
                       Content="Zapamti šifru"
-                      Margin="8" Grid.ColumnSpan="2"/>-->
+                      Margin="30,20,6.6,8" Grid.ColumnSpan="2"/>
                 </Grid>
 
-                <Grid  Grid.Row="10">
 
-                    <TextBlock Text="{Binding ValidationText, Mode=TwoWay}" FontSize="20"  FontWeight="Normal"  Foreground="#e21429" Margin="10,20,25,0"  />
-
-                </Grid>
 
                 <Grid Grid.Row="11">
 
@@ -144,7 +140,7 @@
                     <Button Command="{Binding ZaPrijavu, Mode=TwoWay}" x:Name="btnLogin"
                         Grid.Column="0"
                         Content="Prijavi se"
-                        Margin="8,15,8.4,8"
+                        Margin="30,15,8.4,20"
                         Background="#1cb3bc"
                         Foreground="White"
                         Width="300"
@@ -171,21 +167,17 @@
             </Grid>
 
             <Grid Grid.Row ="1">
-              
+
             </Grid>
             <Grid Grid.Row ="2">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width ="80*"/>
-                    <ColumnDefinition Width="927*"/>
-                    <ColumnDefinition Width="774*"/>
-
-                </Grid.ColumnDefinitions>
-
+                <Image x:Name="slika" HorizontalAlignment="Left"  Width="1800" Margin="-20,95,0,-300" Source="ekipa.jpg" UseLayoutRounding="False" d:LayoutRounding="Auto"   >
+                   
+                </Image>
 
 
             </Grid>
         </Grid>
-        
+
 
 
     </Grid>

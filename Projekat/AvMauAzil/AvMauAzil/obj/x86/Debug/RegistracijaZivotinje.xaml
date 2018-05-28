@@ -121,7 +121,7 @@
                 </Grid.RowDefinitions>
                 <Grid Grid.Row ="2">
 
-                    <TextBlock Text="Registracija - osnovni podaci" FontSize="20" FontWeight="Bold"   Foreground="#6bd122" Margin="8,30,20,0"  />
+                    <TextBlock Text="Registracija - osnovni podaci" FontSize="24" FontWeight="Bold"   Foreground="#6bd122" Margin="8,30,20,0"   />
                 </Grid>
                     <Grid Grid.Row ="3">
 
@@ -224,7 +224,7 @@
                     </Grid.RowDefinitions>
                     <Grid Grid.Row ="2">
 
-                        <TextBlock Text="Zdravstveni karton životinje" FontSize="20" FontWeight="Bold"   Foreground="#6bd122" Margin="20,30,20,0"  />
+                        <TextBlock Text="Zdravstveni karton životinje" FontSize="24" FontWeight="Bold"   Foreground="#6bd122" Margin="20,30,20,0"  />
                     </Grid>
                     <Grid Grid.Row ="3">
 
@@ -274,7 +274,7 @@
                         <Button x:ConnectionId='1' x:Name="btnRegister"
                         Grid.Column="1"
                             Width="320"
-                        Content="Registruj se"
+                        Content="Registruj životinju"
                         Margin="8,20,278,8"
                         Background="#1cb3bc"
                         Foreground="White"

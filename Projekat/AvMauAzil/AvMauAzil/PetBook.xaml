@@ -117,7 +117,7 @@
                     </Grid.RowDefinitions>
                     <Grid Grid.Row ="2">
 
-                        <TextBlock Text="FILTER PRETRAGA" FontSize="20" FontWeight="Bold"   Foreground="#6bd122" Margin="8,30,20,0"  />
+                        <TextBlock Text="FILTER PRETRAGA" FontSize="24" FontWeight="Bold"   Foreground="#6bd122" Margin="8,30,20,0"  />
                     </Grid>
                     <Grid Grid.Row ="3">
 
@@ -215,7 +215,7 @@
                     </Grid.RowDefinitions>
                     <Grid Grid.Row ="2">
 
-                        <TextBlock Text="FILTER PRETRAGA" FontSize="20" FontWeight="Bold"   Foreground="#6bd122" Margin="8,30,20,0"  />
+                        <TextBlock Text="PETBOOK" FontSize="24" FontWeight="Bold"   Foreground="#6bd122" Margin="8,30,20,0"  />
                     </Grid>
                     <Grid Grid.Row ="3">
                         <Grid.ColumnDefinitions>

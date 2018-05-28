@@ -29,7 +29,7 @@
                 <Image x:ConnectionId='20' x:Name="logo" Grid.Column="0" HorizontalAlignment="Left"  Width="199" Height="200" Margin="8,0,-207,0" Source="avmau.jpg" Grid.ColumnSpan="3" />
                 <TextBlock Text="AV-MAU SARAJEVO CITY SHELTER" FontSize="45" FontWeight="Bold" Grid.Column="2" Margin="0,80,30,0" Grid.ColumnSpan="3"  />
                 <TextBlock Text="AV-MAU AZIL GRADA SARAJEVA" FontSize="45" FontWeight="Bold" Grid.Column="2" Margin="0,128,30,0" Grid.ColumnSpan="3" />
-                
+
             </Grid>
 
             <Grid Grid.Row ="5">
@@ -56,23 +56,24 @@
                     <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
 
-              
+
                 <Grid Grid.Row ="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width ="1*"/>
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Lični podaci" FontSize="20" FontWeight="Bold"  Margin="0,50,20,0"  />
-                    <TextBlock Text="Uvjeti koje pružate kao udomitelj"  Grid.Column="1" FontSize="20" FontWeight="Bold"  Margin="0,50,20,0"   />
+                    <TextBlock Text="Lični podaci" FontSize="24" FontWeight="Bold"  Margin="0,50,20,0"  Foreground="#6bd122"  />
+                    <TextBlock Text="Uvjeti koje pružate kao udomitelj"  Grid.Column="1" FontSize="24" FontWeight="Bold"  Foreground="#6bd122" Margin="0,50,20,0"   />
                 </Grid>
-                
+
                 <Grid Grid.Row ="1">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width ="1*"/>
-                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width ="108*"/>
+                        <ColumnDefinition Width="845*"/>
+                        <ColumnDefinition Width="952*"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Ime:" FontSize="16" FontWeight="Normal"   Margin="0,50,20,0"  />
-                    <TextBlock Text="Način stanovanja:"  Grid.Column="1" FontSize="16" FontWeight="Normal"  Margin="0,50,20,0"  />
+                    <TextBlock Text="Ime:" FontSize="16" FontWeight="Normal"   Margin="0,50,20,-1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  />
+                    <TextBlock Text="Način stanovanja:"  Grid.Column="2" FontSize="16" FontWeight="Normal"  Margin="0,50,20,-1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  />
                 </Grid>
 
                 <Grid Grid.Row ="2">
@@ -131,7 +132,7 @@
                     <TextBlock Text="JMBG:" FontSize="16" FontWeight="Normal"   Margin="0,10,20,0"  />
                     <TextBlock Text="Kvadratura stana/kuće:"  Grid.Column="1" FontSize="16" FontWeight="Normal"  Margin="0,10,20,0"  />
                 </Grid>
-                
+
                 <Grid Grid.Row ="6">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width ="1*"/>
@@ -153,7 +154,7 @@
 
                     </ComboBox>
                 </Grid>
-                
+
                 <Grid Grid.Row ="7">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width ="1*"/>
@@ -163,7 +164,7 @@
                     <TextBlock Text="Sprat:"  Grid.Column="1" FontSize="16" FontWeight="Normal"  Margin="0,10,20,0"  />
                     <TextBlock Text="Broj ukućana:"  Grid.Column="1" FontSize="16" FontWeight="Normal"   HorizontalAlignment="Center" Margin="0,10,20,0"  />
                 </Grid>
-                
+
                 <Grid Grid.Row ="8">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width ="1*"/>
@@ -225,7 +226,7 @@
                          Content="Nemam ljubimca"
                          Margin="8" HorizontalAlignment="Center"/>
                 </Grid>
-                
+
                 <Grid Grid.Row ="11">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width ="1*"/>
@@ -263,7 +264,7 @@
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
                     <TextBlock Text="Vaša fotografija:" FontSize="16" FontWeight="Normal"   Margin="0,10,20,0"  />
-                    
+
                 </Grid>
 
                 <Grid Grid.Row ="14">

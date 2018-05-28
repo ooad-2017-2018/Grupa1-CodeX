@@ -11,7 +11,7 @@
         <Grid VerticalAlignment="Top" Background="White"
               Margin="60"
               Padding="20">
-            
+
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
@@ -29,9 +29,9 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
-            
-            
-            
+
+
+
             <Grid Grid.Row ="2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width ="53*"/>
@@ -46,12 +46,16 @@
             </Grid>
 
             <Grid Grid.Row ="3">
-                <TextBlock Text="Prijavite nezbrinutu životinju" FontSize="20" FontWeight="Bold"  Margin="0,50,20,0"  />
+                <TextBlock Text="Prijava nezbrinute/ugrožene životinje" FontSize="24" FontWeight="Bold"  Margin="0,50,20,0"  Foreground="#6bd122" />
             </Grid>
 
 
             <Grid Grid.Row ="4">
-                <TextBlock Text="Vrsta životinje:"  Grid.Column="1" FontSize="16" FontWeight="Normal"  Margin="0,50,20,0"  />
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="189*"/>
+                    <ColumnDefinition Width="1571*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Vrsta životinje:" FontSize="16" FontWeight="Normal"  Margin="0,50,20,-1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  />
             </Grid>
 
             <Grid Grid.Row ="5">
@@ -68,11 +72,11 @@
                          Content="Macka"
                          Margin="8" HorizontalAlignment="Center"/>
             </Grid>
-            
+
             <Grid Grid.Row ="6">
                 <TextBlock Text="Datum prijave:"  Grid.Column="1" FontSize="16" FontWeight="Normal"  Margin="0,10,20,0"  />
             </Grid>
-            
+
             <Grid Grid.Row ="7">
                 <DatePicker x:Name="dpDatumRodjenja"
                      Grid.Column="0"
@@ -93,7 +97,7 @@
             <Grid Grid.Row ="10">
                 <TextBlock Text="Vrijeme kada ste uočili životinju:"  Grid.Column="1" FontSize="16" FontWeight="Normal"  Margin="0,10,20,0"  />
             </Grid>
-            
+
             <Grid Grid.Row ="11">
                 <TextBox x:Name="tbVrijeme"
                      Grid.Column="0"
@@ -103,7 +107,7 @@
             <Grid Grid.Row ="12">
                 <TextBlock Text="Opis:"  Grid.Column="1" FontSize="16" FontWeight="Normal"  Margin="0,10,20,0"  />
             </Grid>
-            
+
             <Grid Grid.Row ="13">
                 <TextBox x:Name="tbOpis"
                      Grid.Column="0"

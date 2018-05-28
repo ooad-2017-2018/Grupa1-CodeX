@@ -1,1 +1,1 @@
-C:\Users\Avda\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\AvMauAzil.csproj;x86
+C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\AvMauAzil.csproj;x86
