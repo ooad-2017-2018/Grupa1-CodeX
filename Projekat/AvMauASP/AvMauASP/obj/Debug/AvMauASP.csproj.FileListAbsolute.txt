@@ -248,3 +248,9 @@ C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauASP\AvMauASP\bin\System.Web.Http.WebHos
 C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauASP\AvMauASP\bin\System.Net.Http.Formatting.xml
 C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauASP\AvMauASP\bin\System.Web.Http.xml
 C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauASP\AvMauASP\bin\System.Web.Http.WebHost.xml
+C:\Users\User\Grupa1-CodeX\Projekat\AvMauASP\AvMauASP\bin\System.Net.Http.Formatting.dll
+C:\Users\User\Grupa1-CodeX\Projekat\AvMauASP\AvMauASP\bin\System.Web.Http.dll
+C:\Users\User\Grupa1-CodeX\Projekat\AvMauASP\AvMauASP\bin\System.Web.Http.WebHost.dll
+C:\Users\User\Grupa1-CodeX\Projekat\AvMauASP\AvMauASP\bin\System.Net.Http.Formatting.xml
+C:\Users\User\Grupa1-CodeX\Projekat\AvMauASP\AvMauASP\bin\System.Web.Http.xml
+C:\Users\User\Grupa1-CodeX\Projekat\AvMauASP\AvMauASP\bin\System.Web.Http.WebHost.xml
