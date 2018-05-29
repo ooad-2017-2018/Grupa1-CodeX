@@ -38,7 +38,7 @@ namespace AvMauAzil.Models
                 obj.naziv_posla = u.VrstaPosla;
                 obj.user_pass = u.UsernameUposlenika;
                 userTableObj.InsertAsync(obj);
-                Debug.WriteLine("Uspjesno unesen uposlenik.");
+                Debug.WriteLine("Uspjesno unesen uposlenik!"); 
             }
             catch(Exception)
             {
