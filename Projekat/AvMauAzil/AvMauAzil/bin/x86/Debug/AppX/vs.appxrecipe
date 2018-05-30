@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>WINDOWS-QL47EAH</Machine>
-    <WindowsUser>User</WindowsUser>
+    <Machine>SENZACIJA</Machine>
+    <WindowsUser>Edin</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>79951d0d-d30d-4bd9-a6e1-b500e79618a2</PackageIdentityName>
     <PackageIdentityPublisher>CN=User</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>9649161E9D1EAE9672A43B7B9E9E9AB667B97DF7C0FB1EBD8093DF170049DB73</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>7FD1F5000EA33C06D8C4B9AE90848D0D4EE345BD36B28B78B8048A375F77D160</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>79951d0d-d30d-4bd9-a6e1-b500e79618a2_1.0.0.0_x86__4sdaedqydyjdm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>79951d0d-d30d-4bd9-a6e1-b500e79618a2_4sdaedqydyjdm!App</RegisteredUserModeAppID>
     <RegisteredPackageID>79951d0d-d30d-4bd9-a6e1-b500e79618a2</RegisteredPackageID>
@@ -28,18 +28,18 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-29T00:28:32.962</Modified>
+      <Modified>2018-05-30T21:12:38.600</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AvMauAzil.exe">
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AvMauAzil.exe">
       <PackagePath>entrypoint\AvMauAzil.exe</PackagePath>
-      <Modified>2018-05-29T00:28:29.084</Modified>
+      <Modified>2018-05-30T21:12:35.817</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\microsoft.azure.mobile.client\4.0.2\lib\uap10.0\Microsoft.Azure.Mobile.Client.dll">
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\microsoft.azure.mobile.client\4.0.2\lib\uap10.0\Microsoft.Azure.Mobile.Client.dll">
       <PackagePath>Microsoft.Azure.Mobile.Client.dll</PackagePath>
       <Modified>2017-10-11T15:23:28.000</Modified>
     </AppxPackagedFile>
@@ -99,7 +99,7 @@
       <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
       <Modified>2016-06-11T21:13:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\newtonsoft.json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\newtonsoft.json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
       <Modified>2016-06-13T21:06:14.000</Modified>
     </AppxPackagedFile>
@@ -503,136 +503,136 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T21:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\1.jpg">
-      <PackagePath>1.jpg</PackagePath>
-      <Modified>2018-05-28T17:49:35.025</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Views\1.jpg">
+      <PackagePath>Views\1.jpg</PackagePath>
+      <Modified>2018-04-04T15:55:53.188</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\2.jpg">
-      <PackagePath>2.jpg</PackagePath>
-      <Modified>2018-05-28T17:49:35.025</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Views\2.jpg">
+      <PackagePath>Views\2.jpg</PackagePath>
+      <Modified>2018-04-04T15:55:53.190</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\3.jpg">
-      <PackagePath>3.jpg</PackagePath>
-      <Modified>2018-05-28T17:49:35.025</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Views\3.jpg">
+      <PackagePath>Views\3.jpg</PackagePath>
+      <Modified>2018-04-04T15:55:53.190</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\4.jpg">
-      <PackagePath>4.jpg</PackagePath>
-      <Modified>2018-05-28T17:49:35.025</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Views\4.jpg">
+      <PackagePath>Views\4.jpg</PackagePath>
+      <Modified>2018-04-04T15:55:53.192</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\5.jpg">
-      <PackagePath>5.jpg</PackagePath>
-      <Modified>2018-05-28T17:49:35.025</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Views\5.jpg">
+      <PackagePath>Views\5.jpg</PackagePath>
+      <Modified>2018-04-04T15:55:53.192</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\6.jpg">
-      <PackagePath>6.jpg</PackagePath>
-      <Modified>2018-05-28T17:49:35.040</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Views\6.jpg">
+      <PackagePath>Views\6.jpg</PackagePath>
+      <Modified>2018-04-04T15:55:53.199</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\avmau.jpg">
-      <PackagePath>avmau.jpg</PackagePath>
-      <Modified>2018-05-28T17:49:35.103</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Views\avmau.jpg">
+      <PackagePath>Views\avmau.jpg</PackagePath>
+      <Modified>2018-04-04T15:55:53.510</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\ekipa.jpg">
-      <PackagePath>ekipa.jpg</PackagePath>
-      <Modified>2018-05-28T22:46:12.260</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Views\ekipa.jpg">
+      <PackagePath>Views\ekipa.jpg</PackagePath>
+      <Modified>2018-05-28T23:38:30.549</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\h.jpg">
-      <PackagePath>h.jpg</PackagePath>
-      <Modified>2018-05-28T17:49:35.833</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Views\h.jpg">
+      <PackagePath>Views\h.jpg</PackagePath>
+      <Modified>2018-04-04T15:55:56.881</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\main_slika.jpg">
-      <PackagePath>main_slika.jpg</PackagePath>
-      <Modified>2018-05-28T22:42:41.478</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Views\main_slika.jpg">
+      <PackagePath>Views\main_slika.jpg</PackagePath>
+      <Modified>2018-05-28T23:38:30.554</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\petsit.jpg">
-      <PackagePath>petsit.jpg</PackagePath>
-      <Modified>2018-05-28T22:13:51.112</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Views\petsit.jpg">
+      <PackagePath>Views\petsit.jpg</PackagePath>
+      <Modified>2018-05-28T23:38:31.863</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\avmau.png">
-      <PackagePath>avmau.png</PackagePath>
-      <Modified>2018-05-28T17:49:35.103</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Views\avmau.png">
+      <PackagePath>Views\avmau.png</PackagePath>
+      <Modified>2018-04-04T15:55:53.511</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2018-05-28T17:49:35.040</Modified>
+      <Modified>2018-04-04T15:55:53.252</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-28T17:49:35.040</Modified>
+      <Modified>2018-04-04T15:55:53.332</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-28T17:49:35.056</Modified>
+      <Modified>2018-04-04T15:55:53.389</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-28T17:49:35.056</Modified>
+      <Modified>2018-04-04T15:55:53.408</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-28T17:49:35.056</Modified>
+      <Modified>2018-04-04T15:55:53.434</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-28T17:49:35.056</Modified>
+      <Modified>2018-04-04T15:55:53.435</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-28T17:49:35.056</Modified>
+      <Modified>2018-04-04T15:55:53.464</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2018-05-28T17:49:35.087</Modified>
+      <Modified>2018-04-04T15:55:53.504</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AvMauAzil.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AvMauAzil.xr.xml">
       <PackagePath>AvMauAzil.xr.xml</PackagePath>
-      <Modified>2018-05-28T22:47:10.995</Modified>
+      <Modified>2018-05-28T23:38:30.821</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-05-29T00:28:28.565</Modified>
+      <Modified>2018-05-30T21:06:27.555</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\AdminPage.xbf">
-      <PackagePath>AdminPage.xbf</PackagePath>
-      <Modified>2018-05-29T00:28:28.566</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Views\AdminPage.xbf">
+      <PackagePath>Views\AdminPage.xbf</PackagePath>
+      <Modified>2018-05-30T21:12:35.470</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\PetBook.xbf">
-      <PackagePath>PetBook.xbf</PackagePath>
-      <Modified>2018-05-29T00:28:28.566</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Views\PetBook.xbf">
+      <PackagePath>Views\PetBook.xbf</PackagePath>
+      <Modified>2018-05-30T21:12:35.470</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\MainPage.xbf">
-      <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-05-29T00:28:28.567</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Views\MainPage.xbf">
+      <PackagePath>Views\MainPage.xbf</PackagePath>
+      <Modified>2018-05-30T21:12:35.470</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\PrijaviZivotinju.xbf">
-      <PackagePath>PrijaviZivotinju.xbf</PackagePath>
-      <Modified>2018-05-29T00:28:28.569</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Views\PrijaviZivotinju.xbf">
+      <PackagePath>Views\PrijaviZivotinju.xbf</PackagePath>
+      <Modified>2018-05-30T21:12:35.471</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\RegistracijaKorisnika.xbf">
-      <PackagePath>RegistracijaKorisnika.xbf</PackagePath>
-      <Modified>2018-05-29T00:28:28.572</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Views\RegistracijaKorisnika.xbf">
+      <PackagePath>Views\RegistracijaKorisnika.xbf</PackagePath>
+      <Modified>2018-05-30T21:12:35.471</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\RegistracijaZivotinje.xbf">
-      <PackagePath>RegistracijaZivotinje.xbf</PackagePath>
-      <Modified>2018-05-29T00:28:28.573</Modified>
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Views\RegistracijaZivotinje.xbf">
+      <PackagePath>Views\RegistracijaZivotinje.xbf</PackagePath>
+      <Modified>2018-05-30T21:12:35.471</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2017-09-28T16:28:16.000</Modified>
+      <Modified>2017-09-28T15:28:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-29T00:28:32.176</Modified>
+      <Modified>2018-05-30T21:12:37.402</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AvMauAzil.exe">
+    <AppxPackagedFile Include="C:\Users\Edin\Grupa1-CodeX\Projekat\AvMauAzil\AvMauAzil\bin\x86\Debug\Core\AvMauAzil.exe">
       <PackagePath>AvMauAzil.exe</PackagePath>
-      <Modified>2018-05-29T00:28:32.949</Modified>
+      <Modified>2018-05-30T21:12:38.588</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

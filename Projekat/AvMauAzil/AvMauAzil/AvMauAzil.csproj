@@ -92,7 +92,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AdminPage.xaml.cs">
+    <Compile Include="Views\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
@@ -111,20 +111,20 @@
     <Compile Include="Models\Veterinar.cs" />
     <Compile Include="Models\Vozac.cs" />
     <Compile Include="Models\Zivotinja.cs" />
-    <Compile Include="PetBook.xaml.cs">
+    <Compile Include="Views\PetBook.xaml.cs">
       <DependentUpon>PetBook.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PrijaviZivotinju.xaml.cs">
+    <Compile Include="Views\PrijaviZivotinju.xaml.cs">
       <DependentUpon>PrijaviZivotinju.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegistracijaKorisnika.xaml.cs">
+    <Compile Include="Views\RegistracijaKorisnika.xaml.cs">
       <DependentUpon>RegistracijaKorisnika.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RegistracijaZivotinje.xaml.cs">
+    <Compile Include="Views\RegistracijaZivotinje.xaml.cs">
       <DependentUpon>RegistracijaZivotinje.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\AdminPageViewModel.cs" />
@@ -138,18 +138,18 @@
     <None Include="AvMauAzil_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="1.jpg" />
-    <Content Include="2.jpg" />
-    <Content Include="3.jpg" />
-    <Content Include="4.jpg" />
-    <Content Include="5.jpg" />
-    <Content Include="6.jpg" />
-    <Content Include="avmau.jpg" />
-    <Content Include="avmau.png" />
-    <Content Include="ekipa.jpg" />
-    <Content Include="h.jpg" />
-    <Content Include="main_slika.jpg" />
-    <Content Include="petsit.jpg" />
+    <Content Include="Views\1.jpg" />
+    <Content Include="Views\2.jpg" />
+    <Content Include="Views\3.jpg" />
+    <Content Include="Views\4.jpg" />
+    <Content Include="Views\5.jpg" />
+    <Content Include="Views\6.jpg" />
+    <Content Include="Views\avmau.jpg" />
+    <Content Include="Views\avmau.png" />
+    <Content Include="Views\ekipa.jpg" />
+    <Content Include="Views\h.jpg" />
+    <Content Include="Views\main_slika.jpg" />
+    <Content Include="Views\petsit.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -164,27 +164,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="AdminPage.xaml">
+    <Page Include="Views\AdminPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PetBook.xaml">
+    <Page Include="Views\PetBook.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainPage.xaml">
+    <Page Include="Views\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="PrijaviZivotinju.xaml">
+    <Page Include="Views\PrijaviZivotinju.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RegistracijaKorisnika.xaml">
+    <Page Include="Views\RegistracijaKorisnika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RegistracijaZivotinje.xaml">
+    <Page Include="Views\RegistracijaZivotinje.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
