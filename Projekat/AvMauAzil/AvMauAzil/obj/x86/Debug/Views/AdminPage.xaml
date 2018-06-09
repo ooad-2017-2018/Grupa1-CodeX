@@ -14,11 +14,14 @@
     </Page.DataContext>
 
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" Margin="0,2,0,0" VerticalAlignment="Top">
         <Grid VerticalAlignment="Top" Background="White"
               Margin="10,10,0,0"
               Padding="20" HorizontalAlignment="Left" Height="706">
             <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
@@ -36,7 +39,7 @@
                     <ColumnDefinition Width ="726*"/>
                 </Grid.ColumnDefinitions>
                 <!--Image x:Name="slika"  Grid.Column="0" HorizontalAlignment="Left" Height="142" Margin="8,20,20,200" VerticalAlignment="Top" Width="150" Source="avmau.png" Grid.ColumnSpan="2" /> -->
-                <Image x:ConnectionId='7' x:Name="logo" Grid.Column="0" HorizontalAlignment="Left"  Width="110" Height="110" Margin="8,12,-207,0" Source="avmau.jpg" Grid.ColumnSpan="3" />
+                <Image x:ConnectionId='9' x:Name="logo" Grid.Column="0" HorizontalAlignment="Left"  Width="110" Height="110" Margin="8,12,-207,0" Source="avmau.jpg" Grid.ColumnSpan="3" />
                 <TextBlock Text="AV-MAU SARAJEVO CITY SHELTER" FontSize="20" FontWeight="Bold" Grid.Column="2" Margin="0,60,20,0" Grid.ColumnSpan="3"  />
                 <TextBlock Text="AV-MAU AZIL GRADA SARAJEVA" FontSize="20" FontWeight="Bold" Grid.Column="2" Margin="0,90,20,0" Grid.ColumnSpan="3" />
             </Grid>
@@ -87,11 +90,11 @@
                         </Grid>
                         <Grid Grid.Row ="3">
 
-                            <TextBlock Text="Ime i prezime:" FontSize="20" FontWeight="Normal"  Margin="8,30,20,0"  />
+                            <TextBlock Text="Ime i prezime:" FontSize="14" FontWeight="Normal"  Margin="8,30,20,0"  />
                         </Grid>
                         <Grid Grid.Row ="4">
 
-                            <TextBox x:ConnectionId='6' x:Name="tbIme"
+                            <TextBox x:ConnectionId='8' x:Name="tbIme"
                  
                                 Text="{Binding UpisanoIme, Mode=TwoWay}" PlaceholderText="" Width="250" HorizontalAlignment="Left"
                                 Margin="8,10,6.6,8"  />
@@ -102,41 +105,54 @@
                         <Grid Grid.Row ="13">
 
                             <Button Command="{Binding ZaRegistraciju}" Content="Registriraj" FontSize="14"   Background="#6bd122"
-                        Foreground="White" FontWeight="Normal" Width="320" Margin="8,32,20,0"  />
+                        Foreground="White" FontWeight="Normal" Width="320" Margin="8,0,20,0"  />
                         </Grid>
                         <Grid Grid.Row ="6">
 
-                            <TextBlock x:ConnectionId='5' Text="{Binding PrikazUsername, Mode=OneWay}" FontSize="18" Margin="8,10,6.6,8" Name="tbUsername" HorizontalAlignment="Left"    
-                            VerticalAlignment="Top" Grid.Column="1" Width="250" Height="30">
-                            
+                            <TextBlock x:ConnectionId='7' Text="{Binding PrikazUsername, Mode=OneWay}" FontSize="14" Margin="8,10,6.6,0" Name="tbUsername" HorizontalAlignment="Left"    
+                            VerticalAlignment="Top" Grid.Column="1" Width="250" Height="30" >
+
                             </TextBlock>
                         </Grid>
 
                         <Grid Grid.Row ="7">
-                            <TextBlock Text="JMBG:" FontSize="20" FontWeight="Normal"  Margin="8,20,20,0"  />
+                            <TextBlock Text="JMBG:" FontSize="14" FontWeight="Normal"  Margin="8,0,20,0"  />
                         </Grid>
                         <Grid Grid.Row ="8">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="17*"/>
+                                <ColumnDefinition Width="157*"/>
+                            </Grid.ColumnDefinitions>
 
-                            <TextBox x:ConnectionId='4' x:Name="tbJMBG"
+                            <TextBox x:ConnectionId='6' x:Name="tbJMBG"
                  
                                 Text="{Binding UpisaniJmbg, Mode=TwoWay}" PlaceholderText="" Width="250" HorizontalAlignment="Left"
-                                Margin="8,10,6.6,8"  />
+                                Margin="8,5,0,7" Grid.ColumnSpan="2" VerticalAlignment="Stretch"  />
                         </Grid>
                         <Grid Grid.Row ="9">
-                            <TextBlock Text="Vrsta posla:" FontSize="20" FontWeight="Normal"  Margin="8,20,20,0"  />
+                            <TextBlock Text="Vrsta posla:" FontSize="14" FontWeight="Normal"  Margin="8,5,0,0"  />
                         </Grid>
                         <Grid Grid.Row ="10">
 
-                            <ComboBox x:ConnectionId='3' ItemsSource="{Binding ListaRola}" Margin="8,10,6.6,8" Name="cbVrstaPosla" HorizontalAlignment="Left" SelectedItem="{Binding SelektovanaRola, Mode=TwoWay}"   
+                            <ComboBox x:ConnectionId='5' ItemsSource="{Binding ListaRola}" Margin="8,10,6.6,8" Name="cbVrstaPosla" HorizontalAlignment="Left" SelectedItem="{Binding SelektovanaRola, Mode=TwoWay}"   
                             VerticalAlignment="Top" Grid.Column="1" Width="250" Height="30">
                                 <!-- ComboBox ima source iz ListaRola, i pridruzuje selektovanoj roli-->
                             </ComboBox>
                         </Grid>
                         <Grid Grid.Row ="11">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="91*"/>
+                                <ColumnDefinition Width="120*"/>
                                 <ColumnDefinition Width="412*"/>
                             </Grid.ColumnDefinitions>
+
+                            <Image x:ConnectionId='3' x:Name="polje_za_sliku" Width="100" Height="100" Margin="8,0,10,3"  Grid.ColumnSpan="1"/>
+                           
+                                <Button x:ConnectionId='4' x:Name="btn_UnesiSliku"
+                                 
+                                Content="Unesi sliku" Width="150" HorizontalAlignment="Left"  Background="#1cb3bc"
+                        Foreground="White"
+                                Margin="8,80,8.6,3"  Grid.Column="1"                               />
+                           
 
                         </Grid>
                         <Grid Grid.Row ="12">
@@ -192,6 +208,10 @@
                                 <RowDefinition Height="auto"/>
                                 <RowDefinition Height="auto"/>
                                 <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
                             </Grid.RowDefinitions>
                             <Grid Grid.Row ="0">
                                 <TextBlock Text="Označite uposlenika za brisanje:" FontSize="20" Margin="8,30,20,0"  />
@@ -202,10 +222,10 @@
                                  
                                  Command="{Binding ZaBrisanje}" Content="Izbrisi selektovanog" Width="320" HorizontalAlignment="Left"  Background="#1cb3bc"
                         Foreground="White"
-                                Margin="8,20,8.6,8"  />
+                                Margin="8,30,8.6,8"  />
                             </Grid>
                             <Grid Grid.Row ="4">
-                                <ListView x:ConnectionId='1' Background="AliceBlue" x:Name="myListView" SelectedItem="{Binding SelektovaniUposlenik, Mode=TwoWay}" ItemsSource="{Binding KolekcijaUposlenika, Mode=TwoWay}"  HorizontalAlignment="Left" Height="310" Margin="10,10,0,10" Width="1000">
+                                <ListView x:ConnectionId='1' Background="AliceBlue" x:Name="myListView" SelectedItem="{Binding SelektovaniUposlenik, Mode=TwoWay}" ItemsSource="{Binding KolekcijaUposlenika, Mode=TwoWay}"  HorizontalAlignment="Left" Height="310" Margin="10,10,0,10" Width="1000" >
                                     <ListView.ItemTemplate>
                                         <DataTemplate                            >
                                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
@@ -218,6 +238,7 @@
 
                                 </ListView>
                             </Grid>
+
                             <!-- <Grid Grid.Row ="6">
                                 <Button x:Name="btnBrisi"
                        
@@ -245,6 +266,8 @@
                 </ListView>-->
                 </Grid>
             </Grid>
+           
+           
 
         </Grid>
 
