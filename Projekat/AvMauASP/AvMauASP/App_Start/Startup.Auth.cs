@@ -58,11 +58,11 @@ namespace AvMauASP
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "1075868633683-l5t5rjfoobvore5a1j3rjbp6bpgh4siu.apps.googleusercontent.com",
+                ClientSecret = "6G_IpraJ38qmFO-fvb7vCagz"
+            });
         }
     }
 }
